@@ -5,10 +5,15 @@ using UnityEngine;
 public class CreateManager : MonoBehaviour
 {
     private MemoryPool memoryPool;
+
+    string [] name = new string[2];
     
     private void Awake()
     {
-        memoryPool = new MemoryPool(Resources.Load<GameObject>("Goblin"));
+        name[0] = "Goblin";
+        name[1] = "Slime";
+
+        memoryPool = new MemoryPool(Resources.Load<GameObject>(name[Random.Range(0,2)]));
     }
 
     void Start()
@@ -24,7 +29,9 @@ public class CreateManager : MonoBehaviour
         {
             yield return wait;
 
-            GameObject monster = memoryPool.ActivatePoolItem();
+            GameObject monster = Resources.Load<GameObject>(name[Random.Range(0, 2)]);
+
+            monster = memoryPool.ActivatePoolItem(monster);
             monster.GetComponent<Monster>().SetUp(memoryPool);
 
             monster.transform.position = Random.insideUnitCircle.normalized * 5;

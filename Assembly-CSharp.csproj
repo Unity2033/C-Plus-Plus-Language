@@ -57,12 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\CreateManager.cs" />
     <Compile Include="Assets\Script\Monster\Slime.cs" />
     <Compile Include="Assets\Script\Interface\InterfaceManager.cs" />
     <Compile Include="Assets\Script\Monster\Monster.cs" />
-    <Compile Include="Assets\Script\Monster\Goblin.cs" />
-    <Compile Include="Assets\Script\CreateManager.cs" />
     <Compile Include="Assets\Script\MemoryPool.cs" />
+    <Compile Include="Assets\Script\Monster\Goblin.cs" />
+    <Compile Include="Assets\Script\FollowCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Bolt\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />
