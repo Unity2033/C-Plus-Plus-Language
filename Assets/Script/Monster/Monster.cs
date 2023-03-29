@@ -11,6 +11,7 @@ public class Monster : MonoBehaviour, IAttack
     public int Health
     {
         get { return attack; }
+        set { health = value; }
     }
 
     virtual public void Use() 

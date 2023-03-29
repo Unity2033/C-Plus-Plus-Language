@@ -23,7 +23,7 @@ public class CreateManager : MonoBehaviour
 
     public IEnumerator Create()
     {
-        var wait = new WaitForSeconds(5f);
+        var wait = new WaitForSeconds(3f);
 
         while(true)
         {

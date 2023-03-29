@@ -12,6 +12,7 @@ public class Slime : Monster
 
     override public void Use()
     {
-        Debug.Log("슬라임 공격");
+        Debug.Log("고블린 공격");
+        memoryPool.DeactivatePoolItem(gameObject);
     }
 }

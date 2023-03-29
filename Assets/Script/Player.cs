@@ -2,22 +2,27 @@ using System.Buffers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] float speed = 1.0f;
+    [SerializeField] Material flashMaterial;
 
     private int health = 100;
     private Vector2 direction;
-    private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidBody2D;
+    private Material originalMaterial;
+    private SpriteRenderer spriteRenderer;
+
+    WaitForSeconds wait = new WaitForSeconds(0.125f);
 
     private void Start()
     {
-
         spriteRenderer = GetComponent<SpriteRenderer>();
         rigidBody2D = GetComponent<Rigidbody2D>();
-      
+
+        originalMaterial = spriteRenderer.material;
     }
 
     public void Damage(Monster monster)
@@ -40,6 +45,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    IEnumerator Flash()
+    {
+        spriteRenderer.material = flashMaterial;
+
+        yield return wait;
+
+        spriteRenderer.material = originalMaterial;
+    }
+
     private void FixedUpdate()
     {
         rigidBody2D.velocity = direction.normalized
@@ -54,6 +68,7 @@ public class Player : MonoBehaviour
 
         if (obj != null)
         {
+            StartCoroutine(Flash());
             obj.Use();       
             Damage(monster);
         }

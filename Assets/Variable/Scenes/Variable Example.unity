@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 695184927}
-  speed: 2
+  speed: 1
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &695184924
 GameObject:
@@ -255,7 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb235d9621860de4f9ddb6318724adeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 500
+  flashMaterial: {fileID: 2100000, guid: b9eb7dd35148ca042a3bf10ee32b44f1, type: 2}
 --- !u!212 &695184926
 SpriteRenderer:
   m_ObjectHideFlags: 0
