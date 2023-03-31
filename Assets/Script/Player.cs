@@ -1,7 +1,10 @@
+using System;
 using System.Buffers;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using static UnityEditor.FilePathAttribute;
 using static UnityEditor.PlayerSettings;
 
 public class Player : MonoBehaviour
@@ -9,8 +12,11 @@ public class Player : MonoBehaviour
     [SerializeField] float speed = 1.0f;
     [SerializeField] Material flashMaterial;
 
+    static public Action<Monster> function;
+
+    Vector3 convertedPosition;
     private int health = 100;
-    private Vector2 direction;
+    public Vector2 direction;
     private Rigidbody2D rigidBody2D;
     private Material originalMaterial;
     private SpriteRenderer spriteRenderer;
@@ -23,11 +29,13 @@ public class Player : MonoBehaviour
         rigidBody2D = GetComponent<Rigidbody2D>();
 
         originalMaterial = spriteRenderer.material;
+        function = Damage;
     }
 
     public void Damage(Monster monster)
     {
         health -= monster.Health;
+        Debug.Log("캐릭터의 체력 : " + health);
     }
 
     void Update()
@@ -56,6 +64,14 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        convertedPosition = Camera.main.WorldToViewportPoint(rigidBody2D.position);
+
+        convertedPosition.x = Mathf.Clamp(convertedPosition.x, 0.035f, 0.965f);
+
+        convertedPosition.y = Mathf.Clamp(convertedPosition.y, 0.075f, 0.9125f);
+
+        rigidBody2D.position = Camera.main.ViewportToWorldPoint(convertedPosition);
+
         rigidBody2D.velocity = direction.normalized
             * speed * Time.fixedDeltaTime;
     }
@@ -64,13 +80,10 @@ public class Player : MonoBehaviour
      {
         IAttack obj = collision.GetComponent<IAttack>();
 
-        var monster = collision.GetComponent<Monster>();
-
         if (obj != null)
         {
             StartCoroutine(Flash());
-            obj.Use();       
-            Damage(monster);
+            obj.Use();        
         }
      }
 }

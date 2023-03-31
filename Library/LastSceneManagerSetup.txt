@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Variable/Scenes/Variable Example.unity
+- path: Assets/Scenes/Variable Example.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

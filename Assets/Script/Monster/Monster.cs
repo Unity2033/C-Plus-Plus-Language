@@ -7,11 +7,16 @@ public class Monster : MonoBehaviour, IAttack
     protected int health;
     protected int attack;
     protected MemoryPool memoryPool;
- 
+
     public int Health
     {
         get { return attack; }
         set { health = value; }
+    }
+
+    public void Damage()
+    {
+        Player.function(this);
     }
 
     virtual public void Use() 

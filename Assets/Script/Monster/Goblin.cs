@@ -1,6 +1,7 @@
 using System.Buffers;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Goblin : Monster
@@ -9,14 +10,12 @@ public class Goblin : Monster
     {
         health = 100;
         attack = 5;
-        
     }
+
 
     override public void Use()
     {
         Debug.Log("고블린 공격");
         memoryPool.DeactivatePoolItem(gameObject);
     }
-
-
 }

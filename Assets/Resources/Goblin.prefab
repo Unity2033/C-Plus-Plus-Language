@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7852929303543951694}
   - component: {fileID: 7852929303543951680}
   - component: {fileID: 4039383756030544306}
+  - component: {fileID: 418525998}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -124,3 +125,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dae85b815bedbc14e907a9c762ffeec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &418525998
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7852929303543951683}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b64910e8084027d48a07dbbd83e68f6b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
