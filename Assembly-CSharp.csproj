@@ -64,6 +64,10 @@
     <Compile Include="Assets\Script\Monster\Monster.cs" />
     <Compile Include="Assets\Script\MemoryPool.cs" />
     <Compile Include="Assets\Script\Monster\Goblin.cs" />
+    <Compile Include="Assets\Script\Weapon\Boom.cs" />
+    <Compile Include="Assets\Script\Weapon\Weapon.cs" />
+    <Compile Include="Assets\Script\Weapon\WeaponManager.cs" />
+    <Compile Include="Assets\Script\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Unity.VisualScripting.Generated\Bolt\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />

@@ -43,14 +43,7 @@ public class Player : MonoBehaviour
         direction.x = Input.GetAxisRaw("Horizontal");
         direction.y = Input.GetAxisRaw("Vertical");
 
-        if (direction.x > 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else if (direction.x < 0)
-        {
-            spriteRenderer.flipX = false;
-        }
+        Util.Flip(spriteRenderer, direction, true);
     }
 
     IEnumerator Flash()
