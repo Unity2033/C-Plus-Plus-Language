@@ -387,7 +387,8 @@
 "Assets/Script/Monster/Monster.cs"
 "Assets/Script/Monster/Slime.cs"
 "Assets/Script/Player.cs"
-"Assets/Script/Weapon/Boom.cs"
+"Assets/Script/Util.cs"
+"Assets/Script/Weapon/SpiritCore.cs"
 "Assets/Script/Weapon/Weapon.cs"
 "Assets/Script/Weapon/WeaponManager.cs"
 -langversion:9.0

@@ -4,18 +4,22 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
-using static UnityEditor.FilePathAttribute;
-using static UnityEditor.PlayerSettings;
+using UnityEngine.UIElements;
+
 
 public class Player : MonoBehaviour
 {
     [SerializeField] float speed = 1.0f;
+    [SerializeField] UnityEngine.UI.Slider healthSlider;
     [SerializeField] Material flashMaterial;
 
     static public Action<Monster> function;
 
     Vector3 convertedPosition;
-    private int health = 100;
+
+    private float health = 100;
+    private float maxHealth;
+
     public Vector2 direction;
     private Rigidbody2D rigidBody2D;
     private Material originalMaterial;
@@ -25,17 +29,21 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        function = Damage;
+
+        maxHealth = health;
+
         rigidBody2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         originalMaterial = spriteRenderer.material;
-        function = Damage;
     }
 
     public void Damage(Monster monster)
     {
         health -= monster.Health;
-        Debug.Log("캐릭터의 체력 : " + health);
+
+        healthSlider.value = health / maxHealth;
     }
 
     void Update()

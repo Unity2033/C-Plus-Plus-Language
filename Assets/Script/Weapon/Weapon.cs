@@ -5,18 +5,19 @@ using UnityEngine;
 public class Weapon
 {
     private IWeapon weapon;
-    private Sprite spriteShape;
 
-    public void SetWeapon(IWeapon weapon, Sprite spriteShape)
+    public Sprite WeaponShape(string name)
     {
-        this.weapon = weapon;
-        this.spriteShape = spriteShape;
+        return Resources.Load<Sprite>(name);
+    }
+
+    public void SetWeapon(IWeapon weapon)
+    {
+        this.weapon = weapon;   
     }
 
     public void Attack()
     {
         weapon.Attack();
     }
-
-
 }
