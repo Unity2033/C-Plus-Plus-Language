@@ -10,7 +10,6 @@ using UnityEngine.UIElements;
 public class Player : MonoBehaviour
 {
     [SerializeField] float speed = 1.0f;
-    [SerializeField] UnityEngine.UI.Slider healthSlider;
     [SerializeField] Material flashMaterial;
 
     static public Action<Monster> function;
@@ -18,7 +17,6 @@ public class Player : MonoBehaviour
     Vector3 convertedPosition;
 
     private float health = 100;
-    private float maxHealth;
 
     public Vector2 direction;
     private Rigidbody2D rigidBody2D;
@@ -31,8 +29,6 @@ public class Player : MonoBehaviour
     {
         function = Damage;
 
-        maxHealth = health;
-
         rigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -42,8 +38,6 @@ public class Player : MonoBehaviour
     public void Damage(Monster monster)
     {
         health -= monster.Health;
-
-        healthSlider.value = health / maxHealth;
     }
 
     void Update()

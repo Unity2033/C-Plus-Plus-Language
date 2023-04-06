@@ -5,20 +5,14 @@ using System;
 
 public class SpiritCore : MonoBehaviour, IWeapon
 {
-
-    void Awake()
+    public void Attack(GameObject obj)
     {
-        Create(Resources.Load<GameObject>("GameObject"));
-    }
-
-    public void Create(GameObject obj)
-    {
-        Instantiate(obj);
-    }
-
-    public void Attack()
-    {
-        Debug.Log("Æã~Æã");
+        obj.transform.RotateAround
+        (
+            obj.transform.parent.position,
+            Vector3.forward, 
+            100f * Time.deltaTime
+        );
     }
 
 }

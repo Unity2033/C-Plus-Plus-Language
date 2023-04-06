@@ -7,7 +7,7 @@ public interface IAttack
 
 public interface IWeapon
 {
-    public void Attack();
+    public void Attack(GameObject obj);
 }
 
 

@@ -6,8 +6,10 @@ using UnityEngine.UIElements;
 public class WeaponManager : MonoBehaviour
 {
     private Weapon weapon;
+
     [SerializeField] GameObject character;
     [SerializeField] GameObject weaponObject;
+
     private IWeapon[] iWeapon = new IWeapon[3] { new SpiritCore(), new SpiritCore() , new SpiritCore() };
 
     void Start()
@@ -27,7 +29,6 @@ public class WeaponManager : MonoBehaviour
         switch (count)
         {
             case 0 : weaponObject.GetComponent<SpriteRenderer>().sprite = weapon.WeaponShape("SpiritCore");
-                weaponObject.transform.Translate(Vector2.up * 10 * Time.deltaTime);
                 break;
             case 1 : weaponObject.GetComponent<SpriteRenderer>().sprite = weapon.WeaponShape("MagicWand");
                 break;
@@ -38,6 +39,6 @@ public class WeaponManager : MonoBehaviour
 
     public void Update()
     {
-        weapon.Attack();
+        weapon.Attack(weaponObject);
     }
 }

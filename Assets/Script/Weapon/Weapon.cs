@@ -16,8 +16,8 @@ public class Weapon
         this.weapon = weapon;   
     }
 
-    public void Attack()
+    public void Attack(GameObject obj)
     {
-        weapon.Attack();
+        weapon.Attack(obj);
     }
 }
