@@ -1,76 +1,72 @@
 #include <stdio.h> // 기본 입출력 헤더 파일
 
-void main()	// <- void main 하나만 존재해야 합니다.
+void main()	
 {
-#pragma region 변수 
+#pragma region 서식 지정자
+	/*
+	char character = 'B';
+	int data = 100;
+	float decimal = 9.9531111111f;
 
-	// 데이터를 저장할 수 있는 메모리 공간을 
-	// 생성하는 것 입니다.
+	// 출력하기 위한 자료형의 정보를 명시적으로
+	// 지정해주는 것입니다.
 
-	// 자료형이란?
-	// 데이터를 저장하기 위한 데이터의 형태를 
-	// 정해주는 것입니다.
+	// "%c" 문자 (서식 지정자)
+	// "%d"	정수 (서식 지정자)
+	// "%f" 실수 (서식 지정자 float) 
+	
+	// 서식과 변수의 형태가 일치하지 않으면
+	// 원하는 값이 출력되지 않습니다.
+	// printf("character의 값 : %f\n", character); (잘못된 부분)
+	printf("data의 값 : %d\n", data);
 
-	// 자료형 변수의 이름
-	// ;(세미콜론) : 한 문장의 끝을 알려주는 기호입니다.
+	// float 4 byte 크기의 실수형 자료형은 소수점 이하
+	// 6자리까지만 표기합니다.
+	printf("decimal의 값 : %f\n", decimal);
 
-	// char alphabet = 'A'; // <- 디버깅 화살표가 여기 있다면 (디버깅 실행 대기) 
-	// int data = 100;
-	// float pi = 3.14f;
+	// 서식 지정자의 순서는 왼쪽에서부터 시작합니다.
+	printf("data : %d, decimal : %f", data, decimal);
 
+	// printf(data); (X)
+	*/
 #pragma endregion
 
-	// 변수의 이름 규칙 
-	/* <-- 전체 주석 시작 라인
-	 1.예약어를 사용할 수 없습니다.
-	 ex) int int = 100;
+#pragma region 비트(bit)
+	// 데이터를 나타내는 최소의 단위이며, 0 또는 1의
+	// 조합으로 논리 계산을 수행하는 단위입니다.
 
-	 2.숫자를 변수의 이름으로 사용할 수 있으나
-	   첫번째 단어로 사용할 수 없습니다.
-	 ex) int hp1 = 300; (O)
-	 ex) int 1hp = 200; (X)
+	// 비트 연산자
+	// 비트 단위로 논리 연산을 수행하기 위해 사용하는
+	// 연산자입니다.
 
-	 3.변수의 이름은 대소문자를 구분합니다.
-	 ex) int attack = 26;
-	 ex) int ATTACK = 16;
+	// AND
+	// 두 개의 피연산자 모두 1이면 1을 반환하는 연산자입니다.
+	char num1 = 10; // 0000 1010 <- 1 BYTE
+	char num2 = 15; // 0000 1111 <- 1 BYTE
+	char num3 = 129; // -128 ~ 127 
 
-	 4.변수의 이름에 공백이 포함될 수 없습니다.
-	 ex) int count Down = 3;
+	printf("num1과 num2를 AND 연산한 결과 : %d\n", num1 & num2);
 
-	 5.변수의 이름으로 특수 기호는 "$", "_"만 가능합니다.
-	 ex) int count_Down = 5;
-	 ex) int mo$ney = 999;
-	*/ // <- 전체 주석 끝나는 라인
+	// OR
+	// 두 개의 피연산자 중에 하나라도 1이 있다면 1을 반환하는
+	// 연산자입니다.
+	printf("num1과 num2를 OR 연산한 결과 : %d\n", num1 | num2);
 
-#pragma region 변수의 초기화
- // 최초로 변수에 값을 저장해주는 과정입니다.
-	int exp = 100; // 변수의 선언
-	exp = 999;
-#pragma endregion
+	// XOR
+	// 두 개의 피연산자가 서로 같으면 0을 반환하고, 서로 다르면 1을
+	// 반환하는 연산자입니다.
+	printf("num1과 num2를 XOR 연산한 결과 : %d\n", num1 ^ num2);
 
-#pragma region 상수
-// 프로그램이 실행되는 동안 더 이상 값을 변경할 수 없는
-// 메모리 공간입니다.
-    // 리터럴 값
-	// const float pi = 3.141592;
-	// L-value와 R-Value
+	// NOT
+	// 비트를 반전시키는 연산자입니다.
+	printf("num1을 NOT 연산한 결과 : %d\n", ~num1);
 
-	// pi = 6.4571;	상수로 선언되었기 때문에 값을 변경할 수 없습니다.
-#pragma endregion
-
-#pragma region 산술 연산자
-	int result = (10 - 2) * 3;
-
-	// 1. num1 변수 = B 변수 + C 변수
-	// 
-	// 2. num2 변수 = E 변수 - F (심볼릭)상수
-	// 3. num3 변수 = 리터럴 상수 * B 변수
-	// 4. num4 변수 = 리터럴 상수 / F (심볼릭)상수
-	// 5. num5 변수 = 리터럴 상수 + 리터럴 상수
+	// 첫 번째 비트는 부호를 나타내며, 첫 번째 비트에
+	// 1이 있다면 값은 음수가 됩니다.
+	printf("num3의 값 : %d", num3);
+		
 
 #pragma endregion
-
-
 
 
 }
