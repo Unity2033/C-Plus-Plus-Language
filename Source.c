@@ -2,145 +2,122 @@
 
 void main()	
 {
-#pragma region 오버플로우
-	// 특정한 자료형이 표현할 수 있는 최댓값의 범위
-	// 넘어서 연산을 수행하는 과정입니다.
-	
-	// char 1 Byte (-128 ~ +127)
-	// char data = 128;
-	// printf("data의 값 : %d", data);
-#pragma endregion
+#pragma region switch문
 
-#pragma region 언더플로우
-	// 특정한 자료형이 표현할 수 있는 최솟값의
-	// 범위를 넘어서 연산을 수행하는 과정입니다.
+	// 어떤 결과에 따라 그 결과부터 실행되는
+	// 명령문입니다.
 
-	// char value = -129; // -128 ~ +127
-	// printf("value의 값 : %d", value);
-#pragma endregion
-
-#pragma region 관계 연산자
-    // 두 개의 피연산자의 값을 비교하여
-	// 그 결과를 0 또는 1이라는 값으로 나타내는 연산자입니다.
-
-	// int A = 5;
-	// int B = 10;
-	// 
-	// // A "<" B : B가 A보다 클 때
-	// printf("A < B : %d\n", A < B);
-	// // A ">" B : B가 A보다 작을 때
-	// printf("A > B : %d\n", A > B);
-	// // A "<=" B : B가 A보다 크거나 같을 때
-	// printf("A <= B : %d\n", A <= B);
-	// // A ">=" B	: B가 A보다 작거나 같을 때
-	// printf("A >= B : %d\n", A >= B);
-	// // A "==" B : A와 B가 같을 때
-	// printf("A == B : %d\n", A == B);
-	// // A "!=" B : A와 B가 같지 않을 때
-	// printf("A != B : %d\n", A != B);
-#pragma endregion
-
-#pragma region 조건문(if ~ else if ~ else)
-// if 문 : 어떤 특정한 조건을 비교하여 조건이
-// 맞다면 실행되는 명령문입니다.
-
-	// 만약에~ (조건)
-	//if (15 == 15)	
+	//int count = 3;
+	//
+	//// switch문의 경우 조건에 해당하는 값에 따라
+	//// 조건의 위치로 이동합니다.
+	//switch(count) // <- 값
 	//{
-	//	// 조건이 "참" 이라면 { } 내부에 있는 내용을 실행합니다.
-	//	printf("15는 15와 같다.\n");
+	//	// break문이란?
+	//	// 특정한 지점에서 분기를 탈출하는
+	//	// 제어문입니다.
+	//
+    //	case 0 : printf("마을\n");
+	//		break;
+	//	case 1 : printf("광산\n");
+	//		break;
+	//	case 2 : printf("던전\n");
+	//		break;
+	//	default : printf("예외적인 값이 발생했습니다.");
+	//		break;
 	//}
 
-	// else if 문 : if문의 조건이 틀릴 때 else if문의 조건이
-	// 맞다면 실행되는 명령문입니다.
-
-	// if (5 > 1)
-	// {
-	// 	printf("if의 조건");
-	// }
-	// else if (5 == 5)
-	// {
-	// 	printf("else if의 조건");
-	// }
-	// else if (10 == 10)
-	// {
-	// 	// else if( ) 여러 개 선언할 수 있습니다.
-	// 	printf("else if의 조건");
-	// }
-
-	// else 문 : if문과 else if문의 조건이 다 틀리면 실행되는 명령문입니다.
-
-	// if ('A' == 'B')
-	// {
-	// 	printf("if 문");
-	// }
-	// else if ('C' == 'D')
-	// {
-	// 	printf("else if 문");
-	// }
-	// else 
-	// {
-	// 	printf("else 문");
-	// }
-
 #pragma endregion
 
-#pragma region 논리 연산자
-	// && (AND) 
-	//	if ('A' == 'A' && 'A' == 'A')
-	//	{
-	//		printf("AND의 조건이 성립합니다.\n");
-	//	}
-	//	
-	//	// || (OR)
-	//	if ('A' == 'A' || 'A' == 'B')
-	//	{
-	//		printf("OR의 조건이 성립합니다.\n");
-	//	}
-	//	
-	//	// ! (NOT)
-	//	if (!'A')
-	//	{
-	//		printf("NOT의 조건이 성립합니다.\n");
-	//	}
+#pragma region 증감 연산자
+	// 피연산자를 하나씩 증가시키거나 감소시킬 때 
+	// 사용하는 연산자입니다.
 
+	// 전위 증감 연산자
+	// 변수의 값을 증감시킨 후에 연산을 수행하는 연산자입니다.
+	//int a = 0;
+	//int result1 = 0;
+	//
+	//// 증가
+	//result1 = ++a;
+	//printf("result1의 값 : %d\n", result1);
+	//
+	//// 감소
+	//result1 = --result1;
+	//printf("result1의 값 : %d\n", result1);
+	//
+	//// 후위 증감 연산자 
+	//// 연산을 수행한 다음 변수의 값을 증감시키는 연산자입니다.
+	//int b = 0;
+	//int result2 = 0;
+	//
+	//// 증감
+	//result2 = b++;
+	//printf("result2의 값 : %d\n", result2);
+	//
+	//// b(1)
+	//
+	//// 감소
+	//result2 = b--;
+	//printf("result2의 값 : %d\n", result2);
 
+	// b(0)
 #pragma endregion
 
+#pragma region 반복문 (for문)
+	// 초기식을 연산하여 조건식의 결과에 따라
+	// 특정한 횟수만큼 반복하는 반복문입니다.
 
-#pragma region 사분면
+	// 초기식 : (int i = 0;)
+	// 조건식 : (i < 5;)
+	// 증감식 : (i++)
+	// for (int i = 0; i < 10; i++)
+	// {
+	// 	// (반복할 내용 : printf("게임 중...\n");)
+	// 	printf("게임 중...\n");
+	// }
 
-   int x = 0;
-   int y = -7;
+	// 반복문 (문제) 
+	// 반복문으로 초기값 1 ~ 5의 값을 출력합니다.
+	// for (int i = 1; i <= 5; i++)
+	// {
+	//	// for문 의경우 조건이 끝나는 형태와
+	//	// 반대로 초기식을 연산하게 되면
+	//	// 조건이 일치하지 않아 계속 반복적으로
+	//	// 실행되는 문제가 발생합니다.
+	//
+	//	printf("%d ", i);
+	// }
 
-   if (x > 0 && y > 0)
-   {
-	   printf("제 1 사분면");
-   }
-   else if (x < 0 && y > 0)
-   {
-	   printf("제 2 사분면");
-   }
-   else if (x < 0 && y < 0)
-   {
-	   printf("제 3 사분면");
-   }
-   else if (x > 0 && y < 0)
-   {
-	   printf("제 4 사분면");
-   }
-   else if (x && y == 0)
-   {
-	   printf("X 절편");
-   }
-   else if (x == 0 && y)
-   {
-	   printf("Y 절편");
-   }
-   else
-   {
-	   printf("원점");
-   }
+	// 반복문 (문제)
+	// 1 ~ 10까지의 합을 구해주세요.
+
+	// int data = 0;
+	// 
+	// for (int i = 1; i <= 10; i++)
+	// {
+	// 	data = data + i;
+	// 
+	// 	// 복합 대입 연산자
+	// 	// ex) 변수 += A 변수;
+	// 	// ex) 변수 -= A 변수;
+	// 	// ex) 변수 *= A 변수;
+	// 	// ex) 변수 /= A 변수;
+	// }
+	// 
+	// printf("data의 값 : %d", data);
+
+    // 2중 for문
+    for (int i = 0; i < 3; i++)
+    {
+		for (int j = 0; j < 3; j++)
+		{
+			printf("안쪽에 있는 for문\n");
+		}
+
+		printf("바깥에 있는 for문\n");
+	}
+
 
 #pragma endregion
 
