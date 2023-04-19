@@ -1,5 +1,2 @@
 ﻿  Source.c
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.c(119,10): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.c(120,9): warning C4477: 'printf' : format string '%lf' requires an argument of type 'double', but variadic argument 1 has type 'int'
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.c(115,8): warning C4133: 'initializing': incompatible types - from 'double *' to 'int *'
   CProject.vcxproj -> C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\x64\Debug\CProject.exe
