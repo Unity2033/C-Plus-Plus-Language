@@ -1,3 +1,2 @@
 ﻿  Source.c
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.c(27,9): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
   CProject.vcxproj -> C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\x64\Debug\CProject.exe

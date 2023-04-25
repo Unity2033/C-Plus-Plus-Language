@@ -44,5 +44,11 @@
     <ClInclude Include="(2023.4.21) 문자열.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.4.24) 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
