@@ -140,6 +140,7 @@
     <ClInclude Include="(2023.4.21) 문자열.h" />
     <ClInclude Include="(2023.4.24) 함수.h" />
     <ClInclude Include="(2023.4.25) 재귀 함수.h" />
+    <ClInclude Include="(2023.4.26) 변수의 범위.h" />
     <ClInclude Include="SoundManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

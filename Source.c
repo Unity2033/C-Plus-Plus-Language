@@ -1,130 +1,100 @@
 #include <stdio.h> 
-
-
-#pragma region 전역 변수
-   // 함수 외부에서 선언된 변수로 프로그램 어디에서나 접근 가능하며,
-   // 프로그램이 종료되어야만 메모리에서 해제되는 변수입니다.
-
-int globalValue = 5;
-
-#pragma endregion
-
-#pragma region 정적 변수
-    // 지역 변수와 전역 변수의 특징을 가지고 있으며, 
-    // 한 번만 초기화가 이루어집니다.
-
-static int attack;
-
-void Calculator()
-{
-	static int value = 1;
-
-	value += 1;
-
-	printf("정적 변수 value의 값 : %d\n", value);
-}
-
-
-#pragma endregion
-
-void Function()
-{	
-	int count = 0;
-
-	count += 1;
-	globalValue += 1;
-
-	printf("count의 값 : %d\n", count);
-	printf("globalValue의 값 : %d\n", globalValue);
-}
+#include <malloc.h>
 
 void main()	
 {    
-#pragma region 지역 변수
-	// '블록'{ } 내에서 선언된 변수로
-	// 블록 내에서만 유효하며, 블록이 종료되면
-	// 메모리에서 사라지는 변수입니다.
+#pragma region 동적 할당
+	// 프로그램을 싱해 중에 필요한 만큼
+	// 메모리를 할당하는 작업입니다.
+   	
+	// 동적 할당은 실행 시간에 가변적으로 메모리의
+	// 크기를 변경시킬 수 있으며, 동적으로 메모리의
+	// 크기를 할당할 때 바이트 단위로 지정합니다.
 
-	// A 지역
-	// int data = 100;
+    // int * ptr = (int *)malloc(sizeof(int));
+
+	// // 메모리 동적 할당할 때 주소를 범용 포인터로 반환하기
+	// // 때문에 자료형을 변환한 다음 메모리에 할당해야 합니다.
+	// *ptr = 1000;
 	// 
-	// { // B 지역
-	// 	int data = 20;
-	// 	printf("B 지역 data의 값 : %d\n", data);
-	// }
-	// 
-	// printf("A 지역 data의 값 : %d\n", data);
+	// printf("동적 할당한 메모리 안에 있는 값 : %d\n", *ptr);
+
+	// // 메모리 해제 
+	// free(ptr);
+
+	// 이미 해제된 메모리를 해제하면 Error가 발생합니다.
+	// free(ptr);
+
 #pragma endregion
 
-	// Function();
-	// Function();
-	// 
-	// Calculator();
-	// Calculator();
-	// 
-	// printf("정적 변수 attack의 값 : %d", attack);
-	
-#pragma region 범용 포인터
-	// 자료형이 정해지지 않은 상태로 모든 자료형을 
-	// 저장할 수 있는 포인터입니다.
+#pragma region ASCII 코드
+	// 영문 알파벳을 사용하는 대표적인 문자 인코딩입니다.
 
-	// char charData = 'X';
-	// int intData = 10;
+	// char alphabet = 65;
 	// 
-	// void * ptr = NULL;
+	// printf("ASCII 코드 정수 값 : %d\n", alphabet);
+	// printf("ASCII 코드 문자 값 : %c\n", alphabet);
 	// 
-	// // 범용 포인터는 메모리 주소에 접근해서 값을
-	// // 변경할 수 없습니다.
-	// ptr = &charData;
-	// 
-	// // 범용 포인터로 변수의 메모리에 접근하려면 범용
-	// // 포인터가 가리키는 변수의 자료형으로 형 변환
-	// // 해주어야 합니다.
-	// *(char *)ptr = 'M';
-	// printf("ptr이 가리키는 값 : %c\n", *(char*)ptr);
-	// 
-	// ptr = &intData;
-	// 
-	// *(int*)ptr = 99;
-	// printf("ptr이 가리키는 값 : %d\n", *(int*)ptr);
-#pragma endregion
-
-#pragma region 약수
-	// 문제) 내가 입력한 숫자의 약수를 출력하세요.
-	// 12 -> 1, 2, 3, 4, 6, 12
-
-	// int number = 0;
-	// 
-	// scanf_s("%d", &number);
-	// 
-	// for (int i = 1; i <= number; i++)
+	// // 문제) 알파벳 (소문자) a ~ z 까지 출력해주세요. 
+	// for (int i = 0; i <= 25; i++)
 	// {
-	// 	if (number % i == 0)
-	// 	{					
-	// 		// 1, 2, 3, 4, 6, 12
-	// 		printf("%d ", i);
-	// 	}
+	// 	printf("%c ", 97 + i);
 	// }
 #pragma endregion
 
-#pragma region ShortCircuit
-	// 논리 연산에서 두 피연산자 중 어느 한쪽만 '참'
-	// 이면 우측의 피연산자의 값은 평가하지 않고 바로 결과를
-	// 얻는 행위입니다.
+#pragma region 허상 포인터
+	// 이미 해제된 메모리 영역을 가리키는 포인터입니다.
 
-	// &&, || (논리 연산자)
-	// &, |	  (비트 연산자)
+	// int * intPtr = malloc(sizeof(int));
+	// 
+	// *intPtr = 300;
+	// 
+	// printf("intPtr이 가리키는 값 : %d\n", *intPtr);
+	// 
+	// free(intPtr);
+	// 
+	// printf("해제된 intPtr이 가리키는 값 : %d\n", *intPtr);
+	// 
+	// intPtr = NULL;
+	// 
+	// *intPtr = 100;
+#pragma endregion
 
-	int x = 0;
-	int y = 1;
+#pragma region 이중 포인터
 
-	if (x == -1 && ++y == 2) { }
+	// int a = 100;
+	// int * aptr = &a;
+	// int ** daptr = &aptr;
 
-	printf("x의 값 : %d, y의 값 : %d\n", x,y);
+	// int b = 200;
+	// int * bptr = &b;
+	// int** dbPtr = &bptr;
+
+	// int temp = 0;
+
+	// // 200 <- 200
+	//   temp = **dbPtr;
+
+	// // 100 <- 100
+	// **dbPtr = **daptr;
+
+    // // 200 <-  200
+	// **daptr = temp;
+
+	// printf("a의 값 : %d, b의 값 : %d\n", a, b);
+	// printf("daptr의 값 : %d, dbPtr의 값 : %d\n", **daptr, **dbPtr);
+
+	// printf("*dptr의 값 : %p\n", *daptr);
+	// printf("**dptr의 값 : %d\n", **daptr);
+
+
+
 
 
 
 #pragma endregion
+
+
 
 
 }
