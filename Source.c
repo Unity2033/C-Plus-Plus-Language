@@ -1,93 +1,106 @@
 #include <stdio.h> 
-#include <malloc.h>
+
+#pragma region 구조체
+    // 여러 개의 변수를 하나의 집합으로 구조화한
+    // 다음 하나의 객체를 생성하는 것입니다.
+struct Player
+{
+    char grade;   // 1 byte
+    int attack;   // 4 byte
+    float health; // 4 byte
+
+    // 구조체를 선언하기 전에 구조체는 메모리 공간이
+    // 생성되지 않으므로, 구조체 내부에 있는 데이터를
+    // 초기화할 수 없습니다.
+};
+
+struct Model
+{
+    int weight;   // 4 byte
+    short mesh;   // 2 byte
+    // Padding       2 byte
+    double size;  // 8 byte
+
+    // 구조체 크기의 경우 멤버 변수의 순서에 따라
+    // 메모리의 크기가 다르게 설정될 수 있으며,
+    // 구조체 크기를 결정하는 형태는 기본 자료형으로만 
+    // 구성됩니다.
+};
+
+
+#pragma endregion
+
 
 void main()	
 {    
-#pragma region 동적 할당
-	// 프로그램을 싱해 중에 필요한 만큼
-	// 메모리를 할당하는 작업입니다.
-   	
-	// 동적 할당은 실행 시간에 가변적으로 메모리의
-	// 크기를 변경시킬 수 있으며, 동적으로 메모리의
-	// 크기를 할당할 때 바이트 단위로 지정합니다.
+#pragma region 구조체
+    // struct Player player;
 
-    // int * ptr = (int *)malloc(sizeof(int));
+// player.attack = 10;
+// player.grade = 'A';
+// player.health = 91.25f;
 
-	// // 메모리 동적 할당할 때 주소를 범용 포인터로 반환하기
-	// // 때문에 자료형을 변환한 다음 메모리에 할당해야 합니다.
-	// *ptr = 1000;
-	// 
-	// printf("동적 할당한 메모리 안에 있는 값 : %d\n", *ptr);
+// printf("player.attack의 값 : %d\n", player.attack);
+// printf("player.grade의 값 : %c\n", player.grade);
+// printf("player.health의 값 : %f\n", player.health);
 
-	// // 메모리 해제 
-	// free(ptr);
+// 구조체 초기화
+// 구조체를 초기화 리스트로 초기화할 때 구조체에 선언된
+// 변수의 순서로 정의해주셔야 합니다.
 
-	// 이미 해제된 메모리를 해제하면 Error가 발생합니다.
-	// free(ptr);
+//                        char int float
+// struct Player newPlayer = {'B', 15 , 66.85f};
+// 
+// printf("newPlayer.attack의 값 : %d\n", newPlayer.attack);
+// printf("newPlayer.grade의 값 : %c\n", newPlayer.grade);
+// printf("newPlayer.health의 값 : %f\n", newPlayer.health);
+#pragma endregion
+
+#pragma region 바이트 패딩
+    // 멤버 변수를 메모리에서 CPU로 읽을 때 한 번에
+    // 읽을 수 있도록, 컴파일러가 레지스터의 블록에
+    // 맞추어 바이트를 패딩 해주는 작업입니다.
+
+    // struct Player otherPlayer;
+    // struct Model model;
+    // 
+    // // 구조체의 크기는 구조체를 구성하는 멤버 중에
+    // // 크기가 가장 큰 자료형의 배수가 되도록 설정합니다.
+    // printf("Player의 크기 : %d\n", sizeof(otherPlayer));
+    // printf("Model의 크기 : %d\n", sizeof(model));
 
 #pragma endregion
 
-#pragma region ASCII 코드
-	// 영문 알파벳을 사용하는 대표적인 문자 인코딩입니다.
+#pragma region 소수
+    // 1보다 큰 자연수 중 1과 자기 자신만을 약수로 
+    // 가지는 수다.
 
-	// char alphabet = 65;
-	// 
-	// printf("ASCII 코드 정수 값 : %d\n", alphabet);
-	// printf("ASCII 코드 문자 값 : %c\n", alphabet);
-	// 
-	// // 문제) 알파벳 (소문자) a ~ z 까지 출력해주세요. 
-	// for (int i = 0; i <= 25; i++)
-	// {
-	// 	printf("%c ", 97 + i);
-	// }
-#pragma endregion
+   // int count = 0;
+   // int number = 0;
+   //
+   // scanf_s("%d", &number);
+   //
+   // for (int i = 2; i <= number; i++)
+   // {
+   //     if (number % i == 0)
+   //     {
+   //         count++; 
+   //     }
+   // }
+   //
+   // if (count == 1)
+   // {
+   //     printf("소수입니다.");
+   // }
+   // else
+   // {
+   //     printf("소수가 아닙니다.");
+   // }
 
-#pragma region 허상 포인터
-	// 이미 해제된 메모리 영역을 가리키는 포인터입니다.
+    // 4 <- 입력
 
-	// int * intPtr = malloc(sizeof(int));
-	// 
-	// *intPtr = 300;
-	// 
-	// printf("intPtr이 가리키는 값 : %d\n", *intPtr);
-	// 
-	// free(intPtr);
-	// 
-	// printf("해제된 intPtr이 가리키는 값 : %d\n", *intPtr);
-	// 
-	// intPtr = NULL;
-	// 
-	// *intPtr = 100;
-#pragma endregion
-
-#pragma region 이중 포인터
-
-	// int a = 100;
-	// int * aptr = &a;
-	// int ** daptr = &aptr;
-
-	// int b = 200;
-	// int * bptr = &b;
-	// int** dbPtr = &bptr;
-
-	// int temp = 0;
-
-	// // 200 <- 200
-	//   temp = **dbPtr;
-
-	// // 100 <- 100
-	// **dbPtr = **daptr;
-
-    // // 200 <-  200
-	// **daptr = temp;
-
-	// printf("a의 값 : %d, b의 값 : %d\n", a, b);
-	// printf("daptr의 값 : %d, dbPtr의 값 : %d\n", **daptr, **dbPtr);
-
-	// printf("*dptr의 값 : %p\n", *daptr);
-	// printf("**dptr의 값 : %d\n", **daptr);
-
-
+    // 2 입력 -> 소수
+    // 4 입력 -> 소수가 아닙니다.
 
 
 
@@ -96,5 +109,6 @@ void main()
 
 
 
-
+    
+  
 }
