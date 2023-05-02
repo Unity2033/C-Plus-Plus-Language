@@ -1,114 +1,98 @@
 #include <stdio.h> 
 
-#pragma region 구조체
-    // 여러 개의 변수를 하나의 집합으로 구조화한
-    // 다음 하나의 객체를 생성하는 것입니다.
-struct Player
-{
-    char grade;   // 1 byte
-    int attack;   // 4 byte
-    float health; // 4 byte
-
-    // 구조체를 선언하기 전에 구조체는 메모리 공간이
-    // 생성되지 않으므로, 구조체 내부에 있는 데이터를
-    // 초기화할 수 없습니다.
-};
-
-struct Model
-{
-    int weight;   // 4 byte
-    short mesh;   // 2 byte
-    // Padding       2 byte
-    double size;  // 8 byte
-
-    // 구조체 크기의 경우 멤버 변수의 순서에 따라
-    // 메모리의 크기가 다르게 설정될 수 있으며,
-    // 구조체 크기를 결정하는 형태는 기본 자료형으로만 
-    // 구성됩니다.
-};
-
-
-#pragma endregion
-
-
-void main()	
+int main()	
 {    
-#pragma region 구조체
-    // struct Player player;
+#pragma region 포인터 배열
 
-// player.attack = 10;
-// player.grade = 'A';
-// player.health = 91.25f;
+	// const char * string[3];
+	// 
+	// // 8 byte  8 byte  8 byte
+    //         
+	// //  0 번째 Index [First의 시작 주소]  
+	// 
+	// string[0] = "First";
+	// string[1] = "Second";
+	// string[2] = "Third";
+	// 
+	// for (int i = 0; i < 3; i++)
+	// {
+	// 	printf("string[%d]의 값 : %s\n", i, string[i]);
+	// }
 
-// printf("player.attack의 값 : %d\n", player.attack);
-// printf("player.grade의 값 : %c\n", player.grade);
-// printf("player.health의 값 : %f\n", player.health);
-
-// 구조체 초기화
-// 구조체를 초기화 리스트로 초기화할 때 구조체에 선언된
-// 변수의 순서로 정의해주셔야 합니다.
-
-//                        char int float
-// struct Player newPlayer = {'B', 15 , 66.85f};
-// 
-// printf("newPlayer.attack의 값 : %d\n", newPlayer.attack);
-// printf("newPlayer.grade의 값 : %c\n", newPlayer.grade);
-// printf("newPlayer.health의 값 : %f\n", newPlayer.health);
+	// int a = 10; 
+	// int b = 20;
+	// int c = 30;
+	// 
+	// int * ptr1 = &a; 
+	// int * ptr2 = &b;
+	// int * ptr3 = &c;
+	// 
+	// // 포인터 배열 선언
+	// int * arrayPtr[ ] = {ptr1, ptr2, ptr3};
+	// 
+	// printf("arrayPtr[0]의 값 : %p\n", arrayPtr[0]);
+	// printf("arrayPtr[0]가 가리키는 값 : %d\n", *arrayPtr[0]);
 #pragma endregion
 
-#pragma region 바이트 패딩
-    // 멤버 변수를 메모리에서 CPU로 읽을 때 한 번에
-    // 읽을 수 있도록, 컴파일러가 레지스터의 블록에
-    // 맞추어 바이트를 패딩 해주는 작업입니다.
+#pragma region unsigend(부호없는 자료형)
+	// 부호가 없는 자료형으로	부호 비트가 없고,
+	// 자료를 저장할 수 있는 데이터 영역이 2배로
+	// 늘어나는 자료형입니다.
 
-    // struct Player otherPlayer;
-    // struct Model model;
-    // 
-    // // 구조체의 크기는 구조체를 구성하는 멤버 중에
-    // // 크기가 가장 큰 자료형의 배수가 되도록 설정합니다.
-    // printf("Player의 크기 : %d\n", sizeof(otherPlayer));
-    // printf("Model의 크기 : %d\n", sizeof(model));
+	//  부호
+	//  [1] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
+	// -128
+	// char data = 128; // -128 ~ 127
+	// 
+	// //  부호
+    // //  [1] [1] [1] [1] [1] [1] [1] [1]
+    // //  128	 64  32  16  8   4   2   1
+	// unsigned char uData = 128;
+	// 
+	// // signed 자료형은 암묵적 형변환이 진행될 때
+	// // 늘어나느 메모리 값은 1(부호 비트)로 채워집니다.
+	// 
+	// // [] [] [] [] 
+	// // [1] [1] [1] [10000000]
+	// printf("data의 값 : %d\n", data);
+	// printf("data의 값 : %u\n", data);
+	// 
+	// // %u : unsigned int 형 값을 표현하는 서식 지정자입니다.
+	// 
+    // // 둘 다 부호가 없는 표현이므로 암묵적 형변환이 진행될 때
+	// // 늘어나는 메모리 값은 0으로 채워집니다.
+	// printf("uData의 값 : %d\n", uData);
+	// printf("uData의 값 : %u\n", uData);
+
+	// [11111111]
+	// 1 byte (char) uData
+
+	// [0] [0] [0] [11111111] 
+	// 4 byte
+#pragma endregion
+
+#pragma region 공약수
+	// 두 개의 정수형 변수 선언
+	// ex) int x, y;
+    // x와 y변수에 입력한 값을 저장하고
+	// x와 y의 공통된 약수를 구해주세요.
+	int x = 0;
+	int y = 0;
+
+	scanf_s("%d %d", &x, &y);
+
+	for (int i = 1; i <= x && i <= y; i++)
+	{
+		if (x % i == 0 && y % i == 0)
+		{
+			printf("%d ", i);
+		}
+	}
+
 
 #pragma endregion
 
-#pragma region 소수
-    // 1보다 큰 자연수 중 1과 자기 자신만을 약수로 
-    // 가지는 수다.
-
-   // int count = 0;
-   // int number = 0;
-   //
-   // scanf_s("%d", &number);
-   //
-   // for (int i = 2; i <= number; i++)
-   // {
-   //     if (number % i == 0)
-   //     {
-   //         count++; 
-   //     }
-   // }
-   //
-   // if (count == 1)
-   // {
-   //     printf("소수입니다.");
-   // }
-   // else
-   // {
-   //     printf("소수가 아닙니다.");
-   // }
-
-    // 4 <- 입력
-
-    // 2 입력 -> 소수
-    // 4 입력 -> 소수가 아닙니다.
 
 
-
-
-#pragma endregion
-
-
-
-    
-  
+	return 0;
 }
