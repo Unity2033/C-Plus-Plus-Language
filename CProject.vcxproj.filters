@@ -62,5 +62,8 @@
     <ClInclude Include="(2023.4.28) 구조체.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.5.2) 포인터 배열.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
