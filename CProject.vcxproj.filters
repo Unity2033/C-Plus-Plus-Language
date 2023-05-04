@@ -65,5 +65,8 @@
     <ClInclude Include="(2023.5.2) 포인터 배열.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.5.3) 2차원 배열.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
