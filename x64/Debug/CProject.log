@@ -1,2 +1,4 @@
 ﻿  Source.c
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.c(92,9): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.c(92,9): message : consider using '%zu' in the format string
   CProject.vcxproj -> C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\x64\Debug\CProject.exe
