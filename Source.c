@@ -1,96 +1,63 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h> 
-#include <string.h>
 
-void Function()
+#pragma region 자기 참조 구조체
+       // 자기 자신을 가리키는 포인터가
+       // 구조체의 멤버로 들어가 있는 구조체입니다.
+
+typedef struct Node
 {
-	printf("Function() 함수\n");
-}
-
-void DataList()
-{
-	printf("DataList() 함수\n");
-}
-
-int Damage(int x)
-{
-	return x;
-}
-
-void Sort(void (*fPrt)()) // 오름차순, 내림차순
-{
-	fPrt();
-}
-
-#pragma region typedef
-
-typedef unsigned int UINT;
-
-typedef struct Player
-{
-	int x;
-	int y;
-	char name[10];
-}Player1;
+    int data;
+    struct Node * next;
+}Node;
 
 #pragma endregion
 
 int main()	
 {    
-#pragma region 함수 포인터
-	// 함수의 주솟값을 저장하고 가리킬 수 있는
-	// 변수입니다.
+#pragma region  자기 참조 구조체
 
-	// 함수의 이름은 함수의 주소를 의미합니다.
-	// printf("Function()의 주솟값 : %p\n", Function);
-
-    // 함수 포인터 선언
-	// void (*fPtr) ();
-	// int (*intfPtr) (int);
-	// 
-	// fPtr = Function;
-	// intfPtr = Damage;
-	// 
-	// fPtr();
-	// printf("intfPtr의 값 : %d\n", intfPtr(10));
-	// 
-	// fPtr = DataList;
-	// 
-	// fPtr();
-	// 
-	// Sort(Function);
-
-	// 함수 포인터는 함수의 반환형과 매개변수의 타입이
-	// 일치해야 하므로, 함수 포인터를 사용하여 동적으로
-	// 메모리를 할당할 수 없습니다.
-
-	// fPtr = Damage; 
-	// printf("fPtr의 값 : %d", fPtr(10)); Error
+   //  Node node1 = { 100, NULL };
+   //  Node node2 = { 200, NULL };
+   //  Node node3 = { 300, NULL };
+   // 
+   //  printf("node1의 data 값 : %d\n", node1.data);
+   //  printf("node2의 data 값 : %d\n", node2.data);
+   //  printf("node3의 data 값 : %d\n", node3.data);
+   // 
+   //  node1.next = &node2;
+   //  node2.next = &node3;
+   //  node3.next = NULL;
+   // 
+   //  node1.next->data = 999;
+   // 
+   //  Node * currentPtr = &node1;
+   // 
+   //  while (currentPtr != NULL)
+   //  {
+   //      printf("data의 값 : %d\n", currentPtr->data);
+   // 
+   //      currentPtr = currentPtr->next;
+   //  } 
 
 #pragma endregion
 
-#pragma region typedef
-	// UINT count = 100;
-	// unsigned int value = 9999;
-	// 
-	// printf("count의 값 : %d\n", count);
-	// 
-	// Player1 player1;
-	// player1.x = 10;
-	// player1.y = 5;
-	// 
-	// 
-	// // 배열의 주소 <-
-	// // [A][l][i][s][t][a][t][][] <- [A][l][i]......
-	// // 첫 번째 매개변수 : 복사받을 문자 배열
-	// // 두 번째 매개변수 : 복사하는 문자 배열
-	// strcpy(player1.name, "Alistar");
-	// 
-	// printf("player1.x의 값 : %d\n", player1.x);
-	// printf("player1.name : %s\n", player1.name);
-	// printf("Player1의 메모리 크기 : %u\n", sizeof(player1));
+#pragma region 삼항 연산자
+    // int data = 0;
+    // 
+    //      //  (조건) ? (참) : (거짓)
+    // data = 10 != 10 ? 100 : 445;
+    // 
+    // printf("data의 값 : %d\n", data);
 #pragma endregion
+
+
+    char string[10];
+
+    scanf("%[^\n]s", string);
+
+    printf("string의 값 : %s", string);
 
 	return 0;
 }
