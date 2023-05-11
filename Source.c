@@ -1,63 +1,88 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <stdio.h> 
+#include <stdio.h>
+#include <stdarg.h>
 
-#pragma region 자기 참조 구조체
-       // 자기 자신을 가리키는 포인터가
-       // 구조체의 멤버로 들어가 있는 구조체입니다.
-
-typedef struct Node
+void Array(int array [], int size)
 {
-    int data;
-    struct Node * next;
-}Node;
+	// call by reference
+	for (int i = 0; i < size; i++)
+	{
+		 array[i] = 100 * i;
 
-#pragma endregion
+		 // array[0](0)
+		 // array[1](100)
+	}
+}
+
+void ChangeString(char str[])
+{
+	for (int i = 0; str[i] != '\0'; i++)
+	{	
+		printf("%c", str[i] - 32);
+	}
+}
+
+void Information(int size, ...)
+{
+	// va_list 
+	// 각 가변 인자의 시작 주소를 가리키는 포인터입니다.
+	va_list	argPtr;
+
+
+	// va_start
+	// va_list로 만들어진 포인터에게 가변인자	중 첫 번째
+	// 인자의 주소를 가르쳐주는 매크로입니다.
+	va_start(argPtr, size);
+
+	int result = 0;
+
+	for (int i = 0; i < size; i++)
+	{ 
+		// va_arg 
+		// 특정 가변인자를 가리키고 있는 va_list의 포인터를
+		// 다음 가변인자로 이동시켜 주는 매크로입니다.
+		result += va_arg(argPtr, int);
+	}
+
+	printf("result 변수의 값 : %d\n", result);
+
+	// va_end
+	// 사용한 가변인자 변수를 끝낼 때 NULL로 돌려주는
+	// 매크로입니다.
+	va_end(argPtr);
+}
 
 int main()	
 {    
-#pragma region  자기 참조 구조체
+#pragma region 매개변수 배열
 
-   //  Node node1 = { 100, NULL };
-   //  Node node2 = { 200, NULL };
-   //  Node node3 = { 300, NULL };
-   // 
-   //  printf("node1의 data 값 : %d\n", node1.data);
-   //  printf("node2의 data 값 : %d\n", node2.data);
-   //  printf("node3의 data 값 : %d\n", node3.data);
-   // 
-   //  node1.next = &node2;
-   //  node2.next = &node3;
-   //  node3.next = NULL;
-   // 
-   //  node1.next->data = 999;
-   // 
-   //  Node * currentPtr = &node1;
-   // 
-   //  while (currentPtr != NULL)
-   //  {
-   //      printf("data의 값 : %d\n", currentPtr->data);
-   // 
-   //      currentPtr = currentPtr->next;
-   //  } 
+	// int dataList [5] = { 1,2,3,4,5 };
+	// 
+	// Array(dataList, 5);
+	// 
+	// for (int i = 0; i < 5; i++)
+	// {
+	// 	  printf("%d ", dataList[i]);
+	// }
+
+	// char ptr[10] = {0,};
+	// 
+	// scanf("%s", ptr);
+	// 
+	// ChangeString(ptr);
 
 #pragma endregion
 
-#pragma region 삼항 연산자
-    // int data = 0;
-    // 
-    //      //  (조건) ? (참) : (거짓)
-    // data = 10 != 10 ? 100 : 445;
-    // 
-    // printf("data의 값 : %d\n", data);
+#pragma region 가변 인수
+	  // 매개변수로 들어오는 값의 갯수와 상관없이
+	  // 동적으로 인수를 받을 수 있는 인수입니다.
+	
+	  Information(2, 10, 20);
+	  Information(5, 1, 2, 3, 4, 5);
+
+
 #pragma endregion
-
-
-    char string[10];
-
-    scanf("%[^\n]s", string);
-
-    printf("string의 값 : %s", string);
 
 	return 0;
 }

@@ -71,7 +71,10 @@
     <ClInclude Include="(2023.5.4) 실수를 저장하는 방법.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="(2023.5.10) 함수 포인터.h">
+    <ClInclude Include="%282023.5.9%29 함수 포인터.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.5.10) 자기 참조 구조체.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
