@@ -77,5 +77,8 @@
     <ClInclude Include="(2023.5.10) 자기 참조 구조체.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.5.11) 가변 인수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
