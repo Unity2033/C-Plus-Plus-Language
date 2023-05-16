@@ -80,7 +80,10 @@
     <ClInclude Include="(2023.5.11) 가변 인수.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="(2023.5.15) 랜덤 함수.h">
+    <ClInclude Include="%282023.5.12%29 랜덤 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.5.15) 키 입력 함수.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
