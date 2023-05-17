@@ -4,105 +4,55 @@
 #include <conio.h>
 #include <windows.h>
 
-#define UP 72
-#define LEFT 75
-#define RIGHT 77
-#define DOWN 80
-
-// 좌표 이동 함수
-void GotoXY(int x, int y)
-{
-	COORD position = { x, y };
-
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
-}
-
-
 int main()	
 {    
-#pragma region 좌표 이동 함수
+#pragma region 파일 입출력
+	 
 
-	//	int x = 0;
-	//	int y = 0;
-	//	int key = 0;
-	//	
-	//	while (1)
-	//	{
-	//		GotoXY(x, y);
-	//		printf("★");
-	//	
-	//		if (_kbhit())
-	//		{
-	//			key = _getch();	// 방향키 입력 시 224 00이 들어오게 되므로 앞에 있는 값 224를 삭제합니다.
-	//					
-	//			if (key == -32)
-	//			{
-	//			 	key = _getch();
-	//			}
-	//			 
-	//			switch (key)
-	//			{
-	//				case UP : if(y > 0) y--;	
-	//					break;
-	//				case LEFT : if(x > 0) x--;			
-	//				 	break;
-	//				case RIGHT: x++;
-	//				 	break;
-	//				case DOWN: y++;
-	//				 	break;
-	//			}
-	//	
-	//			system("cls");
-	//		}
-	//	}
-
+	// 파일 쓰기
+    // fopen("파일의 이름.확장자", 파일 모드)
+	// w : 쓰기
+	// r : 읽기
 	
-
-
-
-
-
-#pragma endregion
-
-#pragma region 문자열 길이 함수(strlen)
-     // 문자열의 크기를 반환하는 함수입니다.
-
-	// 가장 마지막에 있는 NULL 문자를 포함하지 않고
-	// 문자열의 크기를 계산합니다.
-	// const char * string = "Visual";
+	// 텍스트 파일을 (w)쓰기로 모드로 열어줍니다.
+	// FILE* filePtr = fopen("DB. txt", "w");
 	// 
-	// int size = strlen(string);
+	// fputs("ID\n", filePtr);
+	// fputs("Password\n", filePtr);
 	// 
-	// printf("size의 값 : %d", size);
+	// // 파일 포인터 닫기
+	// fclose(filePtr);
+
+	int screen = 1;
+
+	// screen = 1 FULL SCREEN MODE
+	// screen = 2 WINDOW MODE
+	SetConsoleDisplayMode(GetStdHandle(STD_OUTPUT_HANDLE), screen, 0);
+
+	FILE* readPtr = NULL;
+
+	// 파일 읽기
+	while (1)
+	{
+		readPtr = fopen("Monster.txt", "r");
+
+		char buffer[10000] = { 0, };
+
+		fread(buffer, 1, 10000, readPtr); // 파일 전체 읽기
+		printf("%s", buffer);
+
+		system("cls");
+
+		if (GetAsyncKeyState(VK_SPACE))
+		{
+			exit(0);
+		}
+	}
+
+	fclose(readPtr);
+
 #pragma endregion
 
-#pragma region 회문
-	//	int flag = 1;
-	//	
-	//	char * data = "ABCD";
-	//	
-	//	//                       5 / 2 = 2
-	//	for (int i = 0; i < strlen(data) / 2; i++)
-	//	{
-	//		// [L] [E]     [E] [L]
-	//		// [0] [1] [2] [3] [4]
-	//		if (data[i] != data[strlen(data) - 1 - i])
-	//		{
-	//			flag = 0;
-	//			break;
-	//		}		
-	//	}
-	//	
-	//	if (flag == 1)
-	//	{
-	//		printf("회문\n");
-	//	}
-	//	else
-	//	{
-	//		printf("회문이 아닙니다.\n");
-	//	}
-
-#pragma endregion
 
 
 
