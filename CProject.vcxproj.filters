@@ -89,5 +89,8 @@
     <ClInclude Include="%282023.5.16%29 좌표 이동 함수.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.5.17) 파일 입출력.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
