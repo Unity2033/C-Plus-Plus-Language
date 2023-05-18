@@ -4,7 +4,7 @@
 #include <conio.h>
 #include <windows.h>
 
-#define SIZE 100
+#define SIZE 50
 
 int main()
 {
