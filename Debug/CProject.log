@@ -1,2 +1,8 @@
-﻿  Source.c
+﻿  Source.cpp
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(30,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(30,24): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(33,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(33,46): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(109,27): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(109,30): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
   CProject.vcxproj -> C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Debug\CProject.exe

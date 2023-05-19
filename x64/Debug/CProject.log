@@ -1,2 +1,9 @@
-﻿  Source.c
+﻿  Source.cpp
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(38,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(38,24): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(41,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(41,46): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(117,27): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(117,30): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(130,2): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
   CProject.vcxproj -> C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\x64\Debug\CProject.exe
