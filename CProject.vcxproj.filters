@@ -98,5 +98,8 @@
     <ClInclude Include="(2023.5.19) 더블 버퍼링.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.5.22) 퍼즐 게임.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
