@@ -1,2 +1,0 @@
-ID : abcd 
-Password : 1234

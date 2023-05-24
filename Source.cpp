@@ -1,27 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <stdio.h>
-#include <conio.h>
-#include <windows.h>
-#include <stdlib.h>	
-#include <time.h>
+#include "LoadManager.h"
 
-#define LEFT 75
-#define RIGHT 77
-
-typedef struct Player
-{
-	int x;
-	int y;
-	const char* shape;
-}Player;
-
-typedef struct Enemy
-{
-	int x;
-	int y;
-	const char * shape;
-}Enemy;
+#define UP 72
+#define DOWN 80
 
 void GotoXY(int x, int y)
 {
@@ -30,7 +12,14 @@ void GotoXY(int x, int y)
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
 }
 
-void Keyboard(Player * ptrPlayer)
+typedef struct Select
+{
+	int x, y;
+	const char * shape;
+}Select;
+
+
+void Keyboard(Select * selectPtr)
 {
 	char key = 0;
 
@@ -45,61 +34,56 @@ void Keyboard(Player * ptrPlayer)
 
 		switch (key)
 		{
-		case LEFT : if (ptrPlayer->x <= 0) return;
-			ptrPlayer->x -= 2;
-				 break;
-		case RIGHT : if (ptrPlayer->x >= 28) return;
-			ptrPlayer->x += 2;
+		case UP : selectPtr->y -= 5;
+			break;
+		case DOWN: selectPtr->y += 5;
 			break;
 		}
+
 	}
 }
 
-int RandomX()
+void Typing(unsigned int speed, const char * content)
 {
-	srand(time(NULL));
+	int i = 0;
 
-	int random = rand() % 31;
-
-	if (random % 2 == 1)
+	while (content[i] != '\0')
 	{
-		random += 1;
+		printf("%c", content[i++]);
+		fflush(stdout);
+		Sleep(speed);
 	}
 
-	return random;
 }
 
 int main()
 {
-	system("mode con cols=30 lines=25");
+	// ReadTextFile("Resources/DB.txt");
+	//Typing(100, "Hello~");
 
-	Player player = { 16, 23, "กฺ" };
-	Enemy enemy = { RandomX(), 0, "ขอ"};
+	int stage = 0;
+
+	Select select = {15, 29, "ขั"};
 
 	while (1)
 	{
-		Keyboard(&player);
+		Keyboard(&select);
 
-		if (enemy.y >= 24)
+		switch (stage)
 		{
-			enemy.y = 0;
-			enemy.x = RandomX();
-		}
-
-		if (player.x == enemy.x && player.y == enemy.y)
-		{
+		case 0:  ReadTextFile("Resources/DB.txt");
+			break;
+		case 1 :   ReadTextFile("Monster.txt");
 			break;
 		}
 
-		GotoXY(enemy.x, enemy.y++);
-		printf("%s", enemy.shape);
+		GotoXY(select.x, select.y);
+		printf("%s", select.shape);
 
-		GotoXY(player.x, player.y);
-		printf("%s", player.shape);
 
-		Sleep(100);
 		system("cls");
 	}
 
+	
 	return 0;
 }

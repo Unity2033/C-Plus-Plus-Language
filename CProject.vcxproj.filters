@@ -101,5 +101,11 @@
     <ClInclude Include="(2023.5.22) 퍼즐 게임.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.5.23) 빌드 과정.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

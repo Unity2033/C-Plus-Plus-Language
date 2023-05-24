@@ -1,5 +1,4 @@
 ﻿  Source.cpp
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(28,21): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(28,24): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(60,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(10,21): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(10,24): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
   CProject.vcxproj -> C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\x64\Debug\CProject.exe
