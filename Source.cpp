@@ -1,88 +1,45 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "LoadManager.h"
+#include <stdio.h>
+#include <string.h>
 
-#define UP 72
-#define DOWN 80
-
-void GotoXY(int x, int y)
+int StringLength(const char * string)
 {
-	COORD position = { x, y };
+	int count = 0;
 
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
-}
-
-typedef struct Select
-{
-	int x, y;
-	const char * shape;
-}Select;
-
-
-void Keyboard(Select * selectPtr)
-{
-	char key = 0;
-
-	if (_kbhit())
+	for (int i = 0; string[i] != '\0'; i++)
 	{
-		key = _getch();
-
-		if (key == -32)
-		{
-			key = _getch();
-		}
-
-		switch (key)
-		{
-		case UP : selectPtr->y -= 5;
-			break;
-		case DOWN: selectPtr->y += 5;
-			break;
-		}
-
-	}
-}
-
-void Typing(unsigned int speed, const char * content)
-{
-	int i = 0;
-
-	while (content[i] != '\0')
-	{
-		printf("%c", content[i++]);
-		fflush(stdout);
-		Sleep(speed);
+		count++;
 	}
 
+	return count++;
 }
 
 int main()
 {
-	// ReadTextFile("Resources/DB.txt");
-	//Typing(100, "Hello~");
+    // 문자열 길이 함수 (strlen)
+	int value = StringLength("IPhone");
 
-	int stage = 0;
+	char string[10];
+	scanf_s("%s", string, 10);
 
-	Select select = {15, 29, "☞"};
-
-	while (1)
-	{
-		Keyboard(&select);
-
-		switch (stage)
-		{
-		case 0:  ReadTextFile("Resources/DB.txt");
-			break;
-		case 1 :   ReadTextFile("Monster.txt");
-			break;
-		}
-
-		GotoXY(select.x, select.y);
-		printf("%s", select.shape);
+	printf("%s\n", string);
+	
 
 
-		system("cls");
-	}
+	int v = strlen("da d");
+	printf("value의 값 : %d\n", v);
+
+	// 문자열 복사 함수 (strcpy)
+
+	// 문자열 연결 함수 (strcat)
+	char content1[20] = { "Hello" };
+	char content2[10] = { "Update" };
+
+	strcat(content1, content2);
+
+	// printf("%s", content1);
+	
 
 	
 	return 0;
