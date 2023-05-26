@@ -1,3 +1,2 @@
 ﻿  Source.cpp
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\Source.cpp(30,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   CProject.vcxproj -> C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\x64\Debug\CProject.exe
