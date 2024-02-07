@@ -1,3 +1,0 @@
-C:\Users\Administrator\Desktop\김금수\CProject\x64\Debug\CProject.exe
-C:\Users\Administrator\Desktop\CProject\CProject\x64\Debug\CProject.exe
-C:\Users\Administrator\Desktop\김금수\C-Language-Lecture\x64\Debug\CProject.exe
