@@ -1,96 +1,102 @@
-﻿#include <iostream>
+﻿#define _CRT_SECURE_NO_WARNINGS 
+#include <iostream>
+#include <string.h>
 
-void Swap(int & firstValue, int & secondValue)
+char character = 'A';
+using namespace std;
+
+namespace EnemySKill
 {
-	int temp = firstValue;
-
-	firstValue = secondValue;
-
-	secondValue = temp;
+	void Skill()
+	{
+		cout << "Enemy Skill" << endl;
+	}
 }
+
+using namespace EnemySKill;
+
+namespace PlayerSkill
+{
+	void Skill()
+	{
+		cout << "Player Skill" << endl;
+	}
+}
+
 
 int main()
 {
-#pragma region 스트림
-	// 시간의 흐름에 따라 연속적으로 발생하는
-	// 데이터의 흐름입니다.
+#pragma region 범위 지정 연산자
+	// 여러 범위에서 사용되는 식별자를 구분하는데
+	// 사용하는 연산자입니다.
 
-	// char alphabet = 'A';
-	// int data = 100;
+	// char character = 'W';
 	// 
-	// std::cout << "data 변수의 값 : " << data << std::endl;
-	// std::cout << "alphabet 변수의 값 : " << alphabet << std::endl;
-
-	// 스트림의 경우 입력된 데이터는 출력 장치로 전달하며,
-	// "<<" 연산자를 사용하여 자신이 참조한 값을 반환하여 출력합니다.
-
-	// int selectCount = 0;
+	// std::cout << "character의 값 : " << character << std::endl;
 	// 
-	// // 스트림으로 입력받을 때 ">>" 연산자를 사용하여 버퍼에 저장한 다음
-	// // NULL 문자까지만 버퍼 안의 내용을 출력합니다. 
-	// std::cin >> selectCount;
+	// // 범위 지정 연산자는 전역 변수와 같은 이름의 지역 변수가 선언되었을 때
+	// // 가장 가까운 범위에 선언된 변수의 이름을 사용하는 범위 규칙이 존재하기
+	// // 때문에 전역 변수가 호출되지 않습니다.
 	// 
-	// std::cout << "selectCount의 값 : " << selectCount;
-
-	// 스트림의 운영체제에 의해 생성되며, 스트림 자체에 버퍼라는
-	// 임시 메모리 공간이 존재합니다.
+	// std::cout << "전역 변수 character의 값 : " << ::character << std::endl;
+	// 
+	// 범위 지정 연산자를 사용하여 전역 변수의 범위를 지정하게 되면 전역 범위에
+	// 접근할 수 있습니다.
 
 #pragma endregion
 
-#pragma region 동적 할당
+#pragma region 이름 공간
+	// 속성을 구분할 수 있도록 유효 범위를 설정하는 영역입니다.
 
-	// int * ptr = new int;
-	// 
-	// std::cout << "ptr이 가리키는 값 : " << *ptr << std::endl;
-	// 
-	// *ptr = 999;
-	// 
-	// std::cout << "ptr이 가리키는 값 : " << *ptr << std::endl;
-	// 
-	// delete ptr;
+	// Skill();
+	// PlayerSkill::Skill();
 
-	// int * list = new int[5];
-	// 
-	// for (int i = 0; i < 5; i++)
-	// {
-	// 	list[i] = 10 + i;
-	// 
-	// 	std::cout << "list[" << i << "]의 값 : " << list[i] << std::endl;
-	// }
-	// 
-	// delete [ ] list;
+	// 이름 공간은 같은 이름의 함수나 변수를 또 다른 공간에
+	// 선언하여 중복되지 않도록 선언할 수 있습니다.
 
 #pragma endregion
 
-#pragma region 참조자
+#pragma region 회문 판별
 
-	// int value = 100;
-	// 
-	// int & ref = value;
-	// 
-	// ref = 999;
-	// 
-	// std::cout << "ref의 값 : " << ref << std::endl;
-	// std::cout << "value의 값 : " << value << std::endl;
+	/*bool flag = true;
 
-	// int x = 10;
-	// int y = 20;
-	   
-	// Swap(x, y);
-	   
-	// std::cout << "x의 값 : " << x << std::endl;
-	// std::cout << "y의 값 : " << y << std::endl;
+	const char * content = "levwdwtwtel";
+
+	int count = strlen(content);
+
+	for (int i = 0; i < count / 2; i++)
+	{
+		if (content[i] != content[count - 1 - i])
+		{
+			flag = false;
+			break;
+		}
+	}
+
+	if (flag == true)
+	{
+		cout << "회문입니다." << endl;
+	}
+	else
+	{
+		cout << "회문이 아닙니다." << endl;
+	}*/
 
 #pragma endregion
 
-#pragma region 범위 기반 for문
+#pragma region 소문자를 대문자로 변환하는 알고리즘
 
-	// int dataList[5] = { 1,2,3,4,5 };
-	// 
-	// for (const int & element : dataList)
-	// {
-	// 	 std::cout << "element의 값 : " << element << std::endl;
-	// }
+	 //char nickName [ ] = "bard";
+
+	 //for (int i = 0; i < strlen(nickName); i++)
+	 //{
+	 //	   if (nickName[i] >= 'a' && nickName[i] <= 'z')
+	 //	   {
+	 //	   	   nickName[i] -= 32;
+	 //	   }
+	 //}
+	 //	  
+	 //cout << "nickName의 값 : " << nickName << endl;
 
 #pragma endregion
 
