@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class3th (class)", "..\Clas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th (Copy Constructor)", "..\Class4th (Copy Constructor)\Class4th (Copy Constructor).vcxproj", "{4A76DA33-A69C-4C12-99BC-DDEC37FA44B7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class5th (Default Parameter)", "..\Class5th (Default Parameter)\Class5th (Default Parameter).vcxproj", "{5D655373-9C4F-42CB-8221-57AA465AC60C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{4A76DA33-A69C-4C12-99BC-DDEC37FA44B7}.Release|x64.Build.0 = Release|x64
 		{4A76DA33-A69C-4C12-99BC-DDEC37FA44B7}.Release|x86.ActiveCfg = Release|Win32
 		{4A76DA33-A69C-4C12-99BC-DDEC37FA44B7}.Release|x86.Build.0 = Release|Win32
+		{5D655373-9C4F-42CB-8221-57AA465AC60C}.Debug|x64.ActiveCfg = Debug|x64
+		{5D655373-9C4F-42CB-8221-57AA465AC60C}.Debug|x64.Build.0 = Debug|x64
+		{5D655373-9C4F-42CB-8221-57AA465AC60C}.Debug|x86.ActiveCfg = Debug|Win32
+		{5D655373-9C4F-42CB-8221-57AA465AC60C}.Debug|x86.Build.0 = Debug|Win32
+		{5D655373-9C4F-42CB-8221-57AA465AC60C}.Release|x64.ActiveCfg = Release|x64
+		{5D655373-9C4F-42CB-8221-57AA465AC60C}.Release|x64.Build.0 = Release|x64
+		{5D655373-9C4F-42CB-8221-57AA465AC60C}.Release|x86.ActiveCfg = Release|Win32
+		{5D655373-9C4F-42CB-8221-57AA465AC60C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,79 +1,38 @@
 ﻿#include <iostream>
-#include "Transform.h"
+#include "Phone.h"
+#include "Marine.h"
 
 using namespace std;
 
-class Monster
-{
-private:
-	int health;
-
-public:
-	static int killCount;
-
-	void PrintDamage(int damage) const
-	{
-		cout << "HP : " << damage << endl;
-	}
-
-	~Monster()
-	{
-		killCount++;
-	}
-};
-
-int Monster::killCount = 0;
-
 int main()
 {
-#pragma region 정적 멤버 변수
+#pragma region 캡슐화
+	// Phone phone1;
+	// 
+	// phone1.SetVolume(10);
+	// 
+	// cout << "phone1의 volume 값은 : " << phone1.GetVolume() << endl;
+#pragma endregion
 
-	// Monster * monster1 = new Monster;
+#pragma region 상속
+	// 상위 클래스의 속성을 하위 클래스가 사용할 수 있도록
+	// 설정해주는 기능입니다.
+
+    // Unit unit;
 	// 
-	// monster1->PrintDamage(23);
+	// cout << "unit 오브젝트의 크기 : " << sizeof(unit) << endl;
 	// 
-	// Monster * monster2 = new Monster;
+	// Marine marine;
 	// 
-	// monster2->PrintDamage(33);
-	// 
-	// Monster * monster3 = new Monster;
-	// 
-	// monster3->PrintDamage(49);
-	// 
-	// Monster * monster4 = new Monster;
-	// 
-	// monster4->PrintDamage(60);
-	// 
-	// delete monster1;
-	// delete monster2;
-	// delete monster3;
-	// delete monster4;
-	// 
-	// cout << "monster가 죽은 횟수 : " << Monster::killCount << endl;
+	// cout << "marine 오브젝트의 크기 : " << sizeof(marine) << endl;
+
+	// 클래스의 상속 관계에서 상위 클래스는 하위 클래스의 속성을 사용할 
+	// 수 없으며, 하위 클래스는 상위 클래스의 메모리를 포함한 상태로
+	// 메모리의 크기가 결정됩니다.
 
 #pragma endregion
 
-#pragma region 기본 매개 변수
-	// Transform transform;
-	// 
-	// cout << endl;
-	// 
-	// transform.Rotate();
-	// 
-	// cout << endl;
-	// 
-	// // 기본 매개 변수는 왼쪽에서부터 값을 설정합니다. 
-	// transform.Rotate(25);
-	// 
-	// cout << endl;
-	// 
-	// // 기본 매개 변수를 지정하려면 왼쪽에서부터 지정해야 합니다.
-	// transform.Rotate(25,50);
-	// 
-	// cout << endl;
-	// 
-	// transform.Rotate(25, 50, 100);
-#pragma endregion
+
 
 	return 0;
 }
