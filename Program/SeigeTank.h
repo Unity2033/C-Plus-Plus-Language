@@ -3,6 +3,10 @@
 
 class SeigeTank : public Mechanic
 {
+public:
+	SeigeTank();
+	~SeigeTank();
 
+	void Move() override;
 };
 
