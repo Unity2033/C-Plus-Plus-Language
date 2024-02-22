@@ -5,7 +5,7 @@ class Vulture : public Mechanic
 {
 public:
 	Vulture();
-	~Vulture();
+	virtual ~Vulture();
 
 	void Move() override;
 

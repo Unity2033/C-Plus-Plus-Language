@@ -1,0 +1,11 @@
+﻿  Source.cpp
+Source.obj : error LNK2019: "public: __cdecl Vulture::Vulture(void)" (??0Vulture@@QEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+Source.obj : error LNK2019: "public: virtual __cdecl Vulture::~Vulture(void)" (??1Vulture@@UEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+Source.obj : error LNK2019: "public: virtual void __cdecl Vulture::Move(void)" (?Move@Vulture@@UEAAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+Source.obj : error LNK2019: "public: __cdecl SeigeTank::SeigeTank(void)" (??0SeigeTank@@QEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+Source.obj : error LNK2019: "public: virtual __cdecl SeigeTank::~SeigeTank(void)" (??1SeigeTank@@UEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+Source.obj : error LNK2019: "public: virtual void __cdecl SeigeTank::Move(void)" (?Move@SeigeTank@@UEAAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+Source.obj : error LNK2019: "public: __cdecl Goliath::Goliath(void)" (??0Goliath@@QEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+Source.obj : error LNK2019: "public: virtual __cdecl Goliath::~Goliath(void)" (??1Goliath@@UEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+Source.obj : error LNK2019: "public: virtual void __cdecl Goliath::Move(void)" (?Move@Goliath@@UEAAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\Administrator\Desktop\C-Language-Lecture\Program\x64\Debug\Class8th (Polymorphism).exe : fatal error LNK1120: 9개의 확인할 수 없는 외부 참조입니다.

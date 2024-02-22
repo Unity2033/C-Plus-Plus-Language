@@ -5,7 +5,7 @@ class SeigeTank : public Mechanic
 {
 public:
 	SeigeTank();
-	~SeigeTank();
+	virtual ~SeigeTank();
 
 	void Move() override;
 };
