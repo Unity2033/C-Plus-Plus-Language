@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class10th (UpCasting)", "..
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class11th (Pure Virtual Function)", "..\Class11th (Pure Virtual Function)\Class11th (Pure Virtual Function).vcxproj", "{F6D8ADF1-F54A-4E30-A89F-CDD6E4C76C2E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class12th (Smart Pointer)", "..\Class12th (Smart Pointer)\Class12th (Smart Pointer).vcxproj", "{6981CDF0-30D7-4276-BB93-932C6432DBE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{F6D8ADF1-F54A-4E30-A89F-CDD6E4C76C2E}.Release|x64.Build.0 = Release|x64
 		{F6D8ADF1-F54A-4E30-A89F-CDD6E4C76C2E}.Release|x86.ActiveCfg = Release|Win32
 		{F6D8ADF1-F54A-4E30-A89F-CDD6E4C76C2E}.Release|x86.Build.0 = Release|Win32
+		{6981CDF0-30D7-4276-BB93-932C6432DBE4}.Debug|x64.ActiveCfg = Debug|x64
+		{6981CDF0-30D7-4276-BB93-932C6432DBE4}.Debug|x64.Build.0 = Debug|x64
+		{6981CDF0-30D7-4276-BB93-932C6432DBE4}.Debug|x86.ActiveCfg = Debug|Win32
+		{6981CDF0-30D7-4276-BB93-932C6432DBE4}.Debug|x86.Build.0 = Debug|Win32
+		{6981CDF0-30D7-4276-BB93-932C6432DBE4}.Release|x64.ActiveCfg = Release|x64
+		{6981CDF0-30D7-4276-BB93-932C6432DBE4}.Release|x64.Build.0 = Release|x64
+		{6981CDF0-30D7-4276-BB93-932C6432DBE4}.Release|x86.ActiveCfg = Release|Win32
+		{6981CDF0-30D7-4276-BB93-932C6432DBE4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
