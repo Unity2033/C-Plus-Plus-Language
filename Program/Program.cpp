@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-	int data = 10;
+	int data = 50;
 
-	int count = 5;
+	int count = 99;
 
 	return 0;
 }
