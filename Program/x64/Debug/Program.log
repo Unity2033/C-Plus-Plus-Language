@@ -1,3 +1,2 @@
 ﻿  Program.cpp
-C:\Users\Administrator\Desktop\C-Language-Lecture\Program\Program.cpp(48,5): warning C4834: [[nodiscard]] 특성이 포함된 함수의 반환 값을 버리는 중입니다.
   Program.vcxproj -> C:\Users\Administrator\Desktop\C-Language-Lecture\Program\x64\Debug\Program.exe
