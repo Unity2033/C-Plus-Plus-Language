@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\c-plus-plus-language\\game\\assets\\scripts\\managers\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\c-plus-plus-language\\game\\assets\\scripts\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\c-plus-plus-language\\game\\assets\\scripts\\managers\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\managers\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "SceneController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\SceneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\SceneController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\SceneController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\SceneController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T11:35:19.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Runner.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Runner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Runner.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Runner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Runner.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwDcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:01:09.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "SceneMove.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\SceneMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\SceneMove.cs",
@@ -38,46 +68,31 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\SceneMove.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T11:47:11.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T11:47:11.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Singleton.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\Singleton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\Singleton.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\Singleton.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\Singleton.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAwBwAAAABAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwBwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T11:05:05.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T11:05:05.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "InputManager.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\InputManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\InputManager.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\InputManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\InputManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T12:11:11.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Runner.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Runner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Runner.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Runner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Runner.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T12:01:09.147Z"
+              "WhenOpened": "2024-06-12T12:11:11.321Z"
             }
           ]
         }
