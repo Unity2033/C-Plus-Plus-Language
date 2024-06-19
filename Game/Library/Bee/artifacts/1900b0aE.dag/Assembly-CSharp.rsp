@@ -362,6 +362,7 @@
 "Assets/Scripts/Managers/RoadManager.cs"
 "Assets/Scripts/Managers/SceneController.cs"
 "Assets/Scripts/Managers/Singleton.cs"
+"Assets/Scripts/RoadTreadmill.cs"
 "Assets/Scripts/Runner.cs"
 -langversion:9.0
 
