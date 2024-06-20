@@ -500,6 +500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5760268798872435962}
+  - component: {fileID: 6362250243473543926}
   m_Layer: 0
   m_Name: Ambulance
   m_TagString: Untagged
@@ -530,6 +531,20 @@ Transform:
   - {fileID: 4469525851153225983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &6362250243473543926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6393087522064439558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94aa31c13ef0874091bb323a6ccc29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0, z: 0}
+  speed: 5
 --- !u!1 &8993866286447348656
 GameObject:
   m_ObjectHideFlags: 0

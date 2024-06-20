@@ -487,6 +487,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &731661950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731661952}
+  - component: {fileID: 731661951}
+  m_Layer: 0
+  m_Name: Obstacle Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &731661951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731661950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4105a1bca7bfb784e8d011cf9f4e6a7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleList: []
+  obstaclePrefabs:
+  - {fileID: 6393087522064439558, guid: 36d15590bc5271e4c9a6a252f4fdb880, type: 3}
+  - {fileID: 6258911773962047747, guid: d7815e648adb9e646b4e8c5ec9f63c4c, type: 3}
+  - {fileID: 3339812493667767936, guid: 40d4aad535f38a84ab5f45deddf61444, type: 3}
+  - {fileID: 4597361520413842100, guid: a4dab8b0f9a97ce46a08ea45cd6eabae, type: 3}
+--- !u!4 &731661952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731661950}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,3 +1360,4 @@ SceneRoots:
   - {fileID: 652127640}
   - {fileID: 28566292}
   - {fileID: 1137581122}
+  - {fileID: 731661952}
