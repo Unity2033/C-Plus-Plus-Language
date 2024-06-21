@@ -11,6 +11,7 @@ public enum RoadLine
 
 public class Runner : MonoBehaviour
 {
+    [SerializeField] AudioClip sound;
     [SerializeField] Animator animator;
 
     [SerializeField] RoadLine roadLine;
@@ -35,6 +36,8 @@ public class Runner : MonoBehaviour
             {
                 roadLine--;
 
+                SoundManager.Instance.Sound(sound);
+
                 animator.Play("Left Move");
             }
         }
@@ -44,6 +47,8 @@ public class Runner : MonoBehaviour
             if (roadLine != RoadLine.RIGHT)
             {
                 roadLine++;
+
+                SoundManager.Instance.Sound(sound);
 
                 animator.Play("Right Move");
             }

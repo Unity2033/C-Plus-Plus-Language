@@ -790,6 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d17b3384fc6794fb07806230f9001d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: e07f15a860bcbc04d9c37a48abd46d5f, type: 3}
   animator: {fileID: 0}
   roadLine: 0
   positionX: 3.5

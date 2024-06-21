@@ -360,6 +360,7 @@
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Managers/InputManager.cs"
 "Assets/Scripts/Managers/ObstacleManager.cs"
+"Assets/Scripts/Managers/ResourcesManager.cs"
 "Assets/Scripts/Managers/RoadManager.cs"
 "Assets/Scripts/Managers/SceneController.cs"
 "Assets/Scripts/Managers/Singleton.cs"
