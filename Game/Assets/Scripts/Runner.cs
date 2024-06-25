@@ -15,6 +15,7 @@ public class Runner : MonoBehaviour
     [SerializeField] Animator animator;
 
     [SerializeField] RoadLine roadLine;
+    [SerializeField] float speed = 5.0f;
     [SerializeField] float positionX = 3.5f;
 
     private void OnEnable()
@@ -62,7 +63,12 @@ public class Runner : MonoBehaviour
 
     public void Move()
     {
-        transform.position = new Vector3(positionX * (float)roadLine, 0, 0);
+        transform.position = Vector3.Lerp
+        (
+            transform.position,
+            new Vector3(positionX * (float)roadLine, 0, 0),
+            speed * Time.deltaTime
+        );
     }
 
     private void OnDisable()

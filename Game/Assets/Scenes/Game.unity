@@ -712,41 +712,13 @@ GameObject:
   - component: {fileID: 1137581122}
   - component: {fileID: 1137581121}
   - component: {fileID: 1137581120}
-  - component: {fileID: 1137581119}
   m_Layer: 0
-  m_Name: Road Treadmill
+  m_Name: Interact Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1137581119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137581118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0caa40572f63e44f86be039fc514b24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  callback:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 28566291}
-        m_TargetAssemblyTypeName: RoadManager, Assembly-CSharp
-        m_MethodName: NewPosition
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!54 &1137581120
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -830,6 +802,7 @@ MonoBehaviour:
   sound: {fileID: 8300000, guid: e07f15a860bcbc04d9c37a48abd46d5f, type: 3}
   animator: {fileID: 0}
   roadLine: 0
+  speed: 20
   positionX: 3.5
 --- !u!95 &1342216471
 Animator:

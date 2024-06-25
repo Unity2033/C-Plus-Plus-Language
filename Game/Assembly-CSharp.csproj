@@ -61,15 +61,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Managers\ResourcesManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\InterfaceManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ObstacleManager.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\Runner.cs" />
     <Compile Include="Assets\Scripts\Managers\InputManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Road.cs" />
     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Managers\Singleton.cs" />
-    <Compile Include="Assets\Scripts\RoadTreadmill.cs" />
     <Compile Include="Assets\Scripts\Managers\RoadManager.cs" />
   </ItemGroup>
   <ItemGroup>
