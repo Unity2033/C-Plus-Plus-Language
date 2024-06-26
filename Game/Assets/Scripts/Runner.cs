@@ -15,6 +15,8 @@ public class Runner : MonoBehaviour
     [SerializeField] Animator animator;
 
     [SerializeField] RoadLine roadLine;
+    [SerializeField] RoadLine previousLine;
+
     [SerializeField] float speed = 5.0f;
     [SerializeField] float positionX = 3.5f;
 
@@ -26,6 +28,8 @@ public class Runner : MonoBehaviour
     void Start()
     {
         roadLine = RoadLine.MIDDLE;
+        previousLine = RoadLine.MIDDLE;
+
         animator = GetComponent<Animator>();
     }
 
@@ -33,8 +37,10 @@ public class Runner : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            previousLine = roadLine;
+
             if (roadLine != RoadLine.LEFT)
-            {
+            {         
                 roadLine--;
 
                 SoundManager.Instance.Sound(sound);
@@ -45,6 +51,8 @@ public class Runner : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            previousLine = roadLine;
+
             if (roadLine != RoadLine.RIGHT)
             {
                 roadLine++;
@@ -54,6 +62,11 @@ public class Runner : MonoBehaviour
                 animator.Play("Right Move");
             }
         }
+    }
+
+    public void RevertPosition()
+    {
+        roadLine = previousLine;
     }
 
     void Update()
