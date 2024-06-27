@@ -69,6 +69,11 @@ public class Runner : MonoBehaviour
         roadLine = previousLine;
     }
 
+    public void Die()
+    {
+        animator.Play("Die");
+    }
+
     void Update()
     {
         Move();
@@ -87,5 +92,15 @@ public class Runner : MonoBehaviour
     private void OnDisable()
     {
         InputManager.Instance.keyAction -= OnKeyUpdate;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        IHitable hitable = other.GetComponent<IHitable>();
+
+        if(hitable != null)
+        {
+            hitable.Activate(this);
+        }
     }
 }

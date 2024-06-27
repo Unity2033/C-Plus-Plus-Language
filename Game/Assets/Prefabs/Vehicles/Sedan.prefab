@@ -312,6 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2393534228700276469}
   - component: {fileID: 6448646579133007636}
+  - component: {fileID: 51850708120609327}
   m_Layer: 0
   m_Name: Back Detector
   m_TagString: Untagged
@@ -355,6 +356,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3, y: 2.5, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &51850708120609327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4453763401766512625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30d9c9f59becb54488a1fd270bf2e437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4597361520413842100
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +379,7 @@ GameObject:
   - component: {fileID: 3161489245140929336}
   - component: {fileID: 4906837792245649683}
   - component: {fileID: 7143147901727616808}
+  - component: {fileID: 1658947459755312063}
   m_Layer: 0
   m_Name: Sedan
   m_TagString: Untagged
@@ -425,12 +439,39 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 2.5, z: 6}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!54 &1658947459755312063
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597361520413842100}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
 --- !u!1 &4841553004157075531
 GameObject:
   m_ObjectHideFlags: 0
