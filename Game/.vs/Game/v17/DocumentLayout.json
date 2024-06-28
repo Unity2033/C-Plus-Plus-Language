@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\c-plus-plus-language\\game\\assets\\scripts\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\c-plus-plus-language\\game\\assets\\scripts\\coroutinecache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coroutinecache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\c-plus-plus-language\\game\\assets\\scripts\\managers\\obstaclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\obstaclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\detectors\\middledetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\detectors\\middledetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\detectors\\frontdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\detectors\\frontdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\interfacemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\interfacemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\road.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\interfacemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\interfacemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,12 +59,8 @@
       "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\c-plus-plus-language\\game\\assets\\scripts\\detectors\\backdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\detectors\\backdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\detectors\\backdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\obstaclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\obstaclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\resourcesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\resourcesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFBC18F-9396-3137-9CFE-DEB2CDB74636}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\assets\\scripts\\managers\\scenemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,11 +86,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": "CoroutineCache.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\CoroutineCache.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CoroutineCache.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\CoroutineCache.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CoroutineCache.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAADwvw0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:29:44.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MiddleDetector.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Detectors\\MiddleDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Detectors\\MiddleDetector.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Detectors\\MiddleDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Detectors\\MiddleDetector.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:06:33.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrontDetector.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Detectors\\FrontDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Detectors\\FrontDetector.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Detectors\\FrontDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Detectors\\FrontDetector.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T11:05:16.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "BackDetector.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Detectors\\BackDetector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Detectors\\BackDetector.cs",
@@ -86,12 +135,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Detectors\\BackDetector.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T11:35:51.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T11:35:51.919Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Road.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Road.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Road.cs",
@@ -99,12 +147,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Road.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T11:30:56.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T11:30:56.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "InteractZone.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\InteractZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InteractZone.cs",
@@ -112,8 +159,7 @@
               "RelativeToolTip": "Assets\\Scripts\\InteractZone.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAADwvwsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T11:15:11.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T11:15:11.93Z"
             },
             {
               "$type": "Document",
@@ -123,14 +169,13 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\InterfaceManager.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\InterfaceManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\InterfaceManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T12:34:43.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T12:34:43.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "RoadTreadmill.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\RoadTreadmill.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RoadTreadmill.cs",
@@ -142,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ResourcesManager.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\ResourcesManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\ResourcesManager.cs",
@@ -154,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "SoundManager.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\SoundManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\SoundManager.cs",
@@ -162,11 +207,12 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\SoundManager.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAIwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T12:41:08.412Z"
+              "WhenOpened": "2024-06-20T12:41:08.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Obstacle.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Obstacle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacle.cs",
@@ -174,24 +220,24 @@
               "RelativeToolTip": "Assets\\Scripts\\Obstacle.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAAwAsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T12:16:49.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T12:16:49.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "ObstacleManager.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\ObstacleManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\ObstacleManager.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\ObstacleManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\ObstacleManager.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAIwEMAAAARAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvyQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T11:21:51.668Z"
+              "WhenOpened": "2024-06-20T11:21:51.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
@@ -203,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "RoadManager.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\RoadManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\RoadManager.cs",
@@ -211,12 +257,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\RoadManager.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAywAcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T12:13:02.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T12:13:02.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "SceneController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\SceneController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\SceneController.cs",
@@ -224,25 +269,23 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\SceneController.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAwDwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T11:35:19.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T11:35:19.528Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Runner.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Runner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Runner.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Runner.cs",
               "RelativeToolTip": "Assets\\Scripts\\Runner.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAUwGYAAAAeAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAiwF8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T12:01:09.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T12:01:09.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "SceneMove.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\SceneMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\SceneMove.cs",
@@ -254,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Singleton.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\Singleton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\Singleton.cs",
@@ -262,12 +305,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\Singleton.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAuwBwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T11:05:05.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T11:05:05.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "InputManager.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\C-Plus-Plus-Language\\Game\\Assets\\Scripts\\Managers\\InputManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\InputManager.cs",
@@ -275,8 +317,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Managers\\InputManager.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T12:11:11.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T12:11:11.321Z"
             }
           ]
         }

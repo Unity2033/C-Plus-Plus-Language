@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiddleDetector : MonoBehaviour
+public class MiddleDetector : MonoBehaviour, IHitable
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Activate(Runner runner)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        runner.RevertPosition();
     }
 }

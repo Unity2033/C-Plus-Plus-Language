@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrontDetector : MonoBehaviour
+public class FrontDetector : MonoBehaviour, IHitable
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Activate(Runner runner)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        runner.Die();
     }
 }

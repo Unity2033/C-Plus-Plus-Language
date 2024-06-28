@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
@@ -49,8 +51,6 @@ public class ObstacleManager : MonoBehaviour
 
     public IEnumerator ActiveObstacle()
     {
-        WaitForSeconds waitForSeconds = new WaitForSeconds(5f);
-
         while(true)
         {
             random = Random.Range(0, obstacleList.Count);
@@ -74,7 +74,7 @@ public class ObstacleManager : MonoBehaviour
 
             obstacleList[random].transform.position = activePositions[randomPosition].position;
 
-            yield return waitForSeconds;
+            yield return CoroutineCache.waitForSeconds(5.0f);
         }
     }
   

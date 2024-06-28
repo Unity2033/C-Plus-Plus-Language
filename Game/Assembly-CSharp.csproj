@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Road.cs" />
     <Compile Include="Assets\Scripts\Detectors\BackDetector.cs" />
     <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\CoroutineCache.cs" />
     <Compile Include="Assets\Scripts\Managers\Singleton.cs" />
     <Compile Include="Assets\Scripts\InteractZone.cs" />
     <Compile Include="Assets\Scripts\Managers\RoadManager.cs" />
