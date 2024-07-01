@@ -363,6 +363,7 @@
 "Assets/Scripts/Detectors/MiddleDetector.cs"
 "Assets/Scripts/InteractZone.cs"
 "Assets/Scripts/MainMenu.cs"
+"Assets/Scripts/Managers/EventManager.cs"
 "Assets/Scripts/Managers/InputManager.cs"
 "Assets/Scripts/Managers/InterfaceManager.cs"
 "Assets/Scripts/Managers/ObstacleManager.cs"
@@ -374,6 +375,7 @@
 "Assets/Scripts/Obstacle.cs"
 "Assets/Scripts/Road.cs"
 "Assets/Scripts/Runner.cs"
+"Assets/Scripts/State.cs"
 -langversion:9.0
 
 /deterministic

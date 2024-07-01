@@ -10,7 +10,7 @@ public enum RoadLine
 }
 
 [RequireComponent(typeof(Rigidbody))]
-public class Runner : MonoBehaviour
+public class Runner : State
 {
     [SerializeField] AudioClip sound;
     [SerializeField] Animator animator;
@@ -23,6 +23,7 @@ public class Runner : MonoBehaviour
 
     private void OnEnable()
     {
+        base.OnEnable();
         InputManager.Instance.keyAction += OnKeyUpdate;
     }
 
@@ -36,6 +37,8 @@ public class Runner : MonoBehaviour
 
     void OnKeyUpdate()
     {
+        if (state == false) return;
+
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             previousLine = roadLine;
@@ -82,6 +85,8 @@ public class Runner : MonoBehaviour
 
     public void Move()
     {
+        if (state == false) return;
+
         transform.position = Vector3.Lerp
         (
             transform.position,
@@ -92,6 +97,8 @@ public class Runner : MonoBehaviour
 
     private void OnDisable()
     {
+        base.OnDisable();
+
         InputManager.Instance.keyAction -= OnKeyUpdate;
     }
 
