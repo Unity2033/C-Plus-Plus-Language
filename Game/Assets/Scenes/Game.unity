@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1283c986c7f10384ba995e2e02b7f1e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  state: 1
+  speed: 0
   offset: 20
   roads:
   - {fileID: 4403111731348166844}
@@ -253,6 +254,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84204573}
   m_CullTransparentMesh: 1
+--- !u!1 &135722144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 135722146}
+  - component: {fileID: 135722145}
+  m_Layer: 0
+  m_Name: Speed Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &135722145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135722144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d06ff65d56b8b140937a25c09bc66c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1342216469}
+        m_TargetAssemblyTypeName: Runner, Assembly-CSharp
+        m_MethodName: Initialize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 28566291}
+        m_TargetAssemblyTypeName: RoadManager, Assembly-CSharp
+        m_MethodName: Initialize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  limitSpeed: 60
+--- !u!4 &135722146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135722144}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &605911495
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4105a1bca7bfb784e8d011cf9f4e6a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 1
   random: 0
   randomPosition: 0
   obstacleList: []
@@ -812,6 +886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d17b3384fc6794fb07806230f9001d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 1
   sound: {fileID: 8300000, guid: e07f15a860bcbc04d9c37a48abd46d5f, type: 3}
   animator: {fileID: 0}
   roadLine: 0
@@ -1651,3 +1726,4 @@ SceneRoots:
   - {fileID: 1137581122}
   - {fileID: 731661952}
   - {fileID: 1356095934}
+  - {fileID: 135722146}

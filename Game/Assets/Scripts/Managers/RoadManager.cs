@@ -2,20 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoadManager : MonoBehaviour
+public class RoadManager : State
 {
-    [SerializeField] float speed = 1.0f;
+    [SerializeField] float speed;
     [SerializeField] float offset = 20.0f;
 
     [SerializeField] List<GameObject> roads;
 
     void Start()
     {
+        Initialize();
+
         roads.Capacity = 10;
+    }
+
+    public void Initialize()
+    {
+        speed = SpeedManager.Speed / 2;
     }
 
     void Update()
     {
+        if (state == false) return;
+
         for(int i = 0; i < roads.Count; i++)
         {
             roads[i].transform.Translate(Vector3.back * speed * Time.deltaTime);

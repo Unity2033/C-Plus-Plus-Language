@@ -1,11 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
-public class ObstacleManager : MonoBehaviour
+public class ObstacleManager : State
 {
     [SerializeField] int random;
     [SerializeField] int randomPosition;
@@ -51,7 +48,7 @@ public class ObstacleManager : MonoBehaviour
 
     public IEnumerator ActiveObstacle()
     {
-        while(true)
+        while(state)
         {
             random = Random.Range(0, obstacleList.Count);
             randomPosition = Random.Range(0, activePositions.Length);

@@ -33,6 +33,13 @@ public class Runner : State
         previousLine = RoadLine.MIDDLE;
 
         animator = GetComponent<Animator>();
+
+        Initialize();
+    }
+
+    public void Initialize()
+    {
+        animator.speed = SpeedManager.Speed / 20;
     }
 
     void OnKeyUpdate()
