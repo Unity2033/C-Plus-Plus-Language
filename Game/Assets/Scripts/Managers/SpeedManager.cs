@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SpeedManager : MonoBehaviour
+public class SpeedManager : State
 {
     [SerializeField] UnityEvent callback;
 
@@ -25,14 +25,14 @@ public class SpeedManager : MonoBehaviour
 
     IEnumerator Increase()
     {
-        while(limitSpeed > speed)
+        while(limitSpeed > speed && state == true)
         {
-            yield return new WaitForSeconds(2.5f);
-
             if(callback != null)
             {
                 callback.Invoke();
             }
+
+            yield return new WaitForSeconds(2.5f);
 
             speed++;
         }
