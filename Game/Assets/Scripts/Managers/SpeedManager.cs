@@ -16,7 +16,7 @@ public class SpeedManager : State
         set { speed = value; }
     }
 
-    private void Start()
+    private void Awake()
     {
         speed = 20.0f;
 

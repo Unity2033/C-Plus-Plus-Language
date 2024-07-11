@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\CoroutineCache.cs" />
     <Compile Include="Assets\Scripts\Managers\Singleton.cs" />
     <Compile Include="Assets\Scripts\InteractZone.cs" />
+    <Compile Include="Assets\Scripts\CanvasCamera.cs" />
     <Compile Include="Assets\Scripts\Managers\RoadManager.cs" />
   </ItemGroup>
   <ItemGroup>

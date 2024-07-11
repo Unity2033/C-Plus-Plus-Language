@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RoadManager : State
 {
@@ -11,8 +12,6 @@ public class RoadManager : State
 
     void Start()
     {
-        Initialize();
-
         roads.Capacity = 10;
     }
 
