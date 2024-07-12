@@ -584,8 +584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94aa31c13ef0874091bb323a6ccc29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0, z: 0}
+  state: 1
   speed: 5
+  direction: {x: 0, y: 0, z: 0}
 --- !u!65 &5407357117694504484
 BoxCollider:
   m_ObjectHideFlags: 0

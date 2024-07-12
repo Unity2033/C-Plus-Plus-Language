@@ -14,11 +14,14 @@ public class Runner : State
 {
     [SerializeField] AudioClip sound;
     [SerializeField] Animator animator;
+    [SerializeField] Rigidbody rigidBody;
 
     [SerializeField] RoadLine roadLine;
     [SerializeField] RoadLine previousLine;
 
+    [SerializeField] bool jump = true;
     [SerializeField] float speed = 5.0f;
+    [SerializeField] float power = 10.0f;
     [SerializeField] float positionX = 3.5f;
 
     private void OnEnable()
@@ -33,6 +36,7 @@ public class Runner : State
         previousLine = RoadLine.MIDDLE;
 
         animator = GetComponent<Animator>();
+        rigidBody = GetComponent<Rigidbody>();
 
         Initialize();
     }
@@ -73,6 +77,27 @@ public class Runner : State
                 animator.Play("Right Move");
             }
         }
+
+        if(jump && Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+    }
+
+    public void Jump()
+    {
+        jump = false;
+
+        animator.Play("Jump");
+
+        rigidBody.AddForce(Vector3.up * power, ForceMode.Impulse);
+    }
+
+    public void Possible()
+    {
+        jump = true;
+
+        animator.SetTrigger("Active");
     }
 
     public void RevertPosition()
@@ -94,10 +119,10 @@ public class Runner : State
     {
         if (state == false) return;
 
-        transform.position = Vector3.Lerp
+        rigidBody.position = Vector3.Lerp
         (
-            transform.position,
-            new Vector3(positionX * (float)roadLine, 0, 0),
+            rigidBody.position,
+            new Vector3(positionX * (float)roadLine, rigidBody.position.y, 0),
             speed * Time.deltaTime
         );
     }
@@ -114,6 +139,16 @@ public class Runner : State
         IHitable hitable = other.GetComponent<IHitable>();
 
         if(hitable != null)
+        {
+            hitable.Activate(this);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        IHitable hitable = collision.transform.GetComponent<IHitable>();
+
+        if (hitable != null)
         {
             hitable.Activate(this);
         }

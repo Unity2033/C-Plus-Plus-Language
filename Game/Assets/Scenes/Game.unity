@@ -1118,9 +1118,11 @@ MonoBehaviour:
   state: 1
   sound: {fileID: 8300000, guid: e07f15a860bcbc04d9c37a48abd46d5f, type: 3}
   animator: {fileID: 1342216471}
+  rigidBody: {fileID: 0}
   roadLine: 0
   previousLine: 0
   speed: 20
+  power: 10
   positionX: 3.5
 --- !u!95 &1342216471
 Animator:
@@ -1839,10 +1841,10 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 124
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!1001 &3847435886519848203
 PrefabInstance:
