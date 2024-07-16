@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Photon Server Game\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Server-Programing\\Photon Server Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A95E9765-582C-A302-AE6F-D87EF7FFBF93}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\photon server game\\assets\\scripts\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A95E9765-582C-A302-AE6F-D87EF7FFBF93}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\server-programing\\photon server game\\assets\\scripts\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A95E9765-582C-A302-AE6F-D87EF7FFBF93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB22BB49-40D1-402F-4647-F0269CF03BFB}|PlayFabEditorExtensions.csproj|c:\\users\\administrator\\desktop\\server-programing\\photon server game\\assets\\playfabeditorextensions\\editor\\scripts\\utils\\editorcoroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB22BB49-40D1-402F-4647-F0269CF03BFB}|PlayFabEditorExtensions.csproj|solutionrelative:assets\\playfabeditorextensions\\editor\\scripts\\utils\\editorcoroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A95E9765-582C-A302-AE6F-D87EF7FFBF93}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Server-Programing\\Photon Server Game\\assets\\scripts\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A95E9765-582C-A302-AE6F-D87EF7FFBF93}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayfabManager.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Server-Programing\\Photon Server Game\\Assets\\Scripts\\PlayfabManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayfabManager.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Server-Programing\\Photon Server Game\\Assets\\Scripts\\PlayfabManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayfabManager.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T12:16:00.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditorCoroutine.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Server-Programing\\Photon Server Game\\Assets\\PlayFabEditorExtensions\\Editor\\Scripts\\Utils\\EditorCoroutine.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayFabEditorExtensions\\Editor\\Scripts\\Utils\\EditorCoroutine.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Server-Programing\\Photon Server Game\\Assets\\PlayFabEditorExtensions\\Editor\\Scripts\\Utils\\EditorCoroutine.cs",
+              "RelativeToolTip": "Assets\\PlayFabEditorExtensions\\Editor\\Scripts\\Utils\\EditorCoroutine.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAjwIwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T11:45:01.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Alarm.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Photon Server Game\\Assets\\Scripts\\Alarm.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Server-Programing\\Photon Server Game\\Assets\\Scripts\\Alarm.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Alarm.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Photon Server Game\\Assets\\Scripts\\Alarm.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Server-Programing\\Photon Server Game\\Assets\\Scripts\\Alarm.cs",
               "RelativeToolTip": "Assets\\Scripts\\Alarm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T12:04:32.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-15T12:04:32.512Z"
             }
           ]
         }
