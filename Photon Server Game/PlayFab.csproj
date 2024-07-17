@@ -73,8 +73,8 @@
     <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsInstanceAPI.cs" />
     <Compile Include="Assets\PlayFabSDK\Server\PlayFabEvents.cs" />
     <Compile Include="Assets\PlayFabSDK\Insights\PlayFabInsightsModels.cs" />
-    <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabErrors.cs" />
     <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabErrors.cs" />
     <Compile Include="Assets\PlayFabSDK\Shared\Public\PluginContractKey.cs" />
     <Compile Include="Assets\PlayFabSDK\Shared\Internal\Log.cs" />
     <Compile Include="Assets\PlayFabSDK\Client\PlayFabEvents.cs" />
@@ -87,8 +87,8 @@
     <Compile Include="Assets\PlayFabSDK\Groups\PlayFabEvents.cs" />
     <Compile Include="Assets\PlayFabSDK\Events\PlayFabEventsModels.cs" />
     <Compile Include="Assets\PlayFabSDK\Multiplayer\PlayFabMultiplayerAPI.cs" />
-    <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptInstanceAPI.cs" />
     <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptInstanceAPI.cs" />
     <Compile Include="Assets\PlayFabSDK\Shared\Internal\PlayFabHttp\PlayFabWebRequest.cs" />
     <Compile Include="Assets\PlayFabSDK\Authentication\PlayFabAuthenticationModels.cs" />
     <Compile Include="Assets\PlayFabSDK\Economy\PlayFabEconomyInstanceAPI.cs" />
@@ -99,8 +99,8 @@
     <Compile Include="Assets\PlayFabSDK\Shared\Models\PlayFabSharedSettings.cs" />
     <Compile Include="Assets\PlayFabSDK\Admin\PlayFabAdminModels.cs" />
     <Compile Include="Assets\PlayFabSDK\Experimentation\PlayFabEvents.cs" />
-    <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabAuthenticationContext.cs" />
     <Compile Include="Assets\PlayFabSDK\Shared\Internal\SimpleJson.cs" />
+    <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabAuthenticationContext.cs" />
     <Compile Include="Assets\PlayFabSDK\Shared\Public\PlayFabDataGatherer.cs" />
     <Compile Include="Assets\PlayFabSDK\Groups\PlayFabGroupsAPI.cs" />
     <Compile Include="Assets\PlayFabSDK\CloudScript\PlayFabCloudScriptAPI.cs" />
