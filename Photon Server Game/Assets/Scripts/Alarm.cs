@@ -17,6 +17,8 @@ public class Alarm : MonoBehaviour
     {
         GameObject window = Instantiate(Resources.Load<GameObject>(alarmType.ToString()));
 
+        Debug.Log(window);
+
         window.GetComponent<Alarm>().content.text = message;
 
         window.GetComponent<Alarm>().content.fontSize = 65;
