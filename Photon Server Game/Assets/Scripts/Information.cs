@@ -9,6 +9,7 @@ public class Information : MonoBehaviourPunCallbacks
 
     public void ConnectRoom()
     {
+        Debug.Log(textMeshProUGUI.text);
         PhotonNetwork.JoinRoom(textMeshProUGUI.text);
     }
 
