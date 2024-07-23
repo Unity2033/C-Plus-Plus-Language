@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 3961687302797431787}
   - component: {fileID: 5253537574412478131}
   - component: {fileID: 3442163635596103874}
-  - component: {fileID: 3733096804438077087}
+  - component: {fileID: 4813873556590332860}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -360,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 9022657284763308324}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -492,28 +492,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e2a56cd7527aad4cb65f0b06d3f4283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  mouseX: 0
-  direction: {x: 0, y: 0, z: 0}
-  temporaryCamera: {fileID: 0}
---- !u!95 &3733096804438077087
-Animator:
-  serializedVersion: 5
+  move: {fileID: 0}
+  temporaryCamera: {fileID: 4005557850926244373}
+--- !u!114 &4813873556590332860
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9022657284763308324}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9148910b3412c584aa8d7648c9d8e19e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e919ba8b8ef7d244da98f8ff59543077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0, z: 0}
+  speed: 5

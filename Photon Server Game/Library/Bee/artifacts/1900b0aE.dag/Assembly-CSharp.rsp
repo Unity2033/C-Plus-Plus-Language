@@ -391,8 +391,10 @@
 "Assets/Scripts/Controller.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Information.cs"
+"Assets/Scripts/Move.cs"
 "Assets/Scripts/PlayfabManager.cs"
 "Assets/Scripts/RoomManager.cs"
+"Assets/Scripts/Rotate.cs"
 -langversion:9.0
 
 /deterministic
