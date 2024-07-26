@@ -390,6 +390,7 @@
 "Assets/Scripts/Character Function/Mouse.cs"
 "Assets/Scripts/Character Function/Move.cs"
 "Assets/Scripts/Character Function/Rotate.cs"
+"Assets/Scripts/ChatManager.cs"
 "Assets/Scripts/ConnectServer.cs"
 "Assets/Scripts/Managers/GameManager.cs"
 "Assets/Scripts/Managers/PlayfabManager.cs"

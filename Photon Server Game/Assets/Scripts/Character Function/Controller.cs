@@ -4,12 +4,10 @@ using UnityEngine;
 using Photon.Realtime;
 
 [RequireComponent(typeof(Move))]
-[RequireComponent(typeof(Mouse))]
 [RequireComponent(typeof(Rotate))]
 public class Controller : MonoBehaviourPunCallbacks
 {
     [SerializeField] Move move;
-    [SerializeField] Mouse mouse;
     [SerializeField] Rotate rotate;
 
     [SerializeField] Camera temporaryCamera;
@@ -17,7 +15,7 @@ public class Controller : MonoBehaviourPunCallbacks
     private void Awake()
     {
         move = GetComponent<Move>();
-        mouse = GetComponent<Mouse>();
+        // mouse = GetComponent<Mouse>();
         rotate = GetComponent<Rotate>();
     }
 
@@ -49,9 +47,5 @@ public class Controller : MonoBehaviourPunCallbacks
         rotate.OnRotate(0, Input.GetAxisRaw("Mouse X"), 0);
     }
 
-    public override void OnMasterClientSwitched(Player newMasterClient)
-    {
-        PhotonNetwork.SetMasterClient(PhotonNetwork.PlayerList[0]);
-       
-    }
+
 }
