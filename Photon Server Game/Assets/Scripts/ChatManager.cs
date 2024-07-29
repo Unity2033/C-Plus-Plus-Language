@@ -10,17 +10,19 @@ public class ChatManager : MonoBehaviourPunCallbacks
 
     void Update()
     {
-        // if(Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
-        // {
-        //     inputField.readOnly = true;
-        // }
-        // else
-        // {
-        //     inputField.readOnly = false;
-        // }
+        if(Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+        {
+            inputField.readOnly = true;
+        }
+        else
+        {
+            inputField.readOnly = false;
+        }
 
         if(Input.GetKeyDown(KeyCode.Return))
         {
+            inputField.ActivateInputField();
+
             if (inputField.text.Length == 0) return;
 
             string dialog = PhotonNetwork.NickName + " : " + inputField.text;
