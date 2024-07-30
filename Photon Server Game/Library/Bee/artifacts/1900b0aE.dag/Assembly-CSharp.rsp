@@ -400,6 +400,7 @@
 "Assets/Scripts/Ui/Alarm.cs"
 "Assets/Scripts/Ui/Information.cs"
 "Assets/Scripts/Ui/Pause.cs"
+"Assets/Scripts/Unit.cs"
 "Assets/Scripts/View.cs"
 -langversion:9.0
 
