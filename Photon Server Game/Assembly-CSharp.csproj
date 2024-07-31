@@ -67,6 +67,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Scripts\Ui\Information.cs" />
     <Compile Include="Assets\Scripts\View.cs" />
+    <Compile Include="Assets\Scripts\Character Function\Head.cs" />
     <Compile Include="Assets\Scripts\Name.cs" />
     <Compile Include="Assets\Scripts\Ui\Alarm.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />

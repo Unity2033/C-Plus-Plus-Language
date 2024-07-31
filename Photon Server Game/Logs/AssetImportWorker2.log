@@ -15,7 +15,7 @@ C:/Users/Administrator/Desktop/Server-Programing/Photon Server Game
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-58447
+65370
 Successfully changed project path to: C:/Users/Administrator/Desktop/Server-Programing/Photon Server Game
 C:/Users/Administrator/Desktop/Server-Programing/Photon Server Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Administrator/Desktop/Server-Programing/Photon Server Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9036] Host "[IP] 192.168.0.149 [Port] 0 [Flags] 2 [Guid] 1326605661 [EditorId] 1326605661 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-G7R323G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19836] Host "[IP] 192.168.0.149 [Port] 0 [Flags] 2 [Guid] 1429926625 [EditorId] 1429926625 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-G7R323G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9036] Host "[IP] 192.168.0.149 [Port] 0 [Flags] 2 [Guid] 1326605661 [EditorId] 1326605661 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-G7R323G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19836] Host "[IP] 192.168.0.149 [Port] 0 [Flags] 2 [Guid] 1429926625 [EditorId] 1429926625 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-G7R323G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 19.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 16.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.14f1 (eff2de9070d8)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -70,20 +70,20 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011230 seconds.
-- Loaded All Assemblies, in  0.388 seconds
+Registered in 0.011355 seconds.
+- Loaded All Assemblies, in  0.356 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 268 ms
+Android Extension - Scanning For ADB Devices 261 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.595 seconds
-Domain Reload Profiling: 981ms
-	BeginReloadAssembly (115ms)
+- Finished resetting the current domain, in  0.562 seconds
+Domain Reload Profiling: 916ms
+	BeginReloadAssembly (108ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -91,26 +91,26 @@ Domain Reload Profiling: 981ms
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (33ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (165ms)
-		LoadAssemblies (113ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (142ms)
+		LoadAssemblies (107ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (163ms)
-			TypeCache.Refresh (161ms)
-				TypeCache.ScanAssembly (146ms)
+		AnalyzeDomain (140ms)
+			TypeCache.Refresh (138ms)
+				TypeCache.ScanAssembly (125ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (595ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (562ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (538ms)
+		SetupLoadedEditorAssemblies (506ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (381ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (363ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (104ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
+			ProcessInitializeOnLoadAttributes (93ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Domain Reload Profiling: 981ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.783 seconds
-Refreshing native plugins compatible for Editor in 5.38 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.765 seconds
+Refreshing native plugins compatible for Editor in 5.65 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -127,47 +127,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.852 seconds
-Domain Reload Profiling: 1631ms
-	BeginReloadAssembly (166ms)
+- Finished resetting the current domain, in  0.838 seconds
+Domain Reload Profiling: 1599ms
+	BeginReloadAssembly (146ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
+		CreateAndSetChildDomain (21ms)
 	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (518ms)
-		LoadAssemblies (373ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (526ms)
+		LoadAssemblies (371ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (239ms)
-			TypeCache.Refresh (209ms)
-				TypeCache.ScanAssembly (186ms)
-			ScanForSourceGeneratedMonoScriptInfo (22ms)
+		AnalyzeDomain (243ms)
+			TypeCache.Refresh (208ms)
+				TypeCache.ScanAssembly (183ms)
+			ScanForSourceGeneratedMonoScriptInfo (27ms)
 			ResolveRequiredComponents (7ms)
-	FinalizeReload (853ms)
+	FinalizeReload (838ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (687ms)
+		SetupLoadedEditorAssemblies (677ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
+			InitializePlatformSupportModulesInManaged (25ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (510ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (514ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 5.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3472 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 48 unused Assets / (62.7 KB). Loaded Objects now: 3929.
-Memory consumption went from 145.1 MB to 145.0 MB.
-Total: 3.330700 ms (FindLiveObjects: 0.473000 ms CreateObjectMapping: 0.194800 ms MarkObjects: 2.538200 ms  DeleteObjects: 0.123600 ms)
+Unloading 3473 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (62.7 KB). Loaded Objects now: 3930.
+Memory consumption went from 145.2 MB to 145.2 MB.
+Total: 3.641700 ms (FindLiveObjects: 0.291100 ms CreateObjectMapping: 0.197100 ms MarkObjects: 3.040000 ms  DeleteObjects: 0.112600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -184,36 +184,44 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 386308.487361 seconds.
-  path: Assets/Images/Crosshairs/Art/Textures/Crosshair_21.png
-  artifactKey: Guid(a8e5031638aa2204082c6f51d5fe1edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Crosshairs/Art/Textures/Crosshair_21.png using Guid(a8e5031638aa2204082c6f51d5fe1edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56e0d57e701eb236a1d469fb1c5a035') in 0.110381 seconds
+  Time since last request: 474264.598307 seconds.
+  path: Assets/External Assets/Pixel Guns 3D/Prefabs/Aqua Variant/AR - AQUA.prefab
+  artifactKey: Guid(c0e41cdfa93b80c42b9f84c8cdc831ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Pixel Guns 3D/Prefabs/Aqua Variant/AR - AQUA.prefab using Guid(c0e41cdfa93b80c42b9f84c8cdc831ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83729cef451f0534a0f810c7cd1904cb') in 0.123956 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 17
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Images/Crosshairs/Art/Textures/Crosshair_23.png
-  artifactKey: Guid(e7e80d39e3e102147a3be13caa7cd3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Crosshairs/Art/Textures/Crosshair_23.png using Guid(e7e80d39e3e102147a3be13caa7cd3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb2b4824d798d0d27511f4de8dd509b') in 0.043366 seconds
+  Time since last request: 2.783138 seconds.
+  path: Assets/External Assets/Pixel Guns 3D/Prefabs/Purple Variant/AR - PURPLE.prefab
+  artifactKey: Guid(7998aec96a81fc742b4cf3290c7976bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Pixel Guns 3D/Prefabs/Purple Variant/AR - PURPLE.prefab using Guid(7998aec96a81fc742b4cf3290c7976bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a1eb789e42a3c29eecf73508881c46') in 0.018881 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 17
 ========================================================================
 Received Import Request.
   Time since last request: 0.000028 seconds.
-  path: Assets/Images/Crosshairs/Art/Textures/Crosshair_15.png
-  artifactKey: Guid(3e60add3ecb1915459d46e3b3a0287f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Crosshairs/Art/Textures/Crosshair_15.png using Guid(3e60add3ecb1915459d46e3b3a0287f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e6f1835920ad13fb671391713b41f1') in 0.030288 seconds
+  path: Assets/External Assets/Pixel Guns 3D/Prefabs/Purple Variant/SNIPER - PURPLE.prefab
+  artifactKey: Guid(84b74576f84769143b32dfb33adced7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Pixel Guns 3D/Prefabs/Purple Variant/SNIPER - PURPLE.prefab using Guid(84b74576f84769143b32dfb33adced7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40258df8f1c38911a546156f58138717') in 0.015815 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 17
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Images/Crosshairs/Art/Textures/Crosshair_18.png
-  artifactKey: Guid(11e5ab06858788e4283a67ae91eca8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Crosshairs/Art/Textures/Crosshair_18.png using Guid(11e5ab06858788e4283a67ae91eca8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2175a7a94f218a2808002fa5e86d2024') in 0.031613 seconds
+  Time since last request: 0.516115 seconds.
+  path: Assets/External Assets/Pixel Guns 3D/Prefabs/Orange Variant/AR - ORANGE.prefab
+  artifactKey: Guid(0ab5215bd25c7cc41a5d709980555bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Pixel Guns 3D/Prefabs/Orange Variant/AR - ORANGE.prefab using Guid(0ab5215bd25c7cc41a5d709980555bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61124fb4bb6de6a669053632089e4e28') in 0.016127 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External Assets/Pixel Guns 3D/Prefabs/Orange Variant/SNIPER - ORANGE.prefab
+  artifactKey: Guid(29e1afeebe706394f97bf743f4fcc742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/External Assets/Pixel Guns 3D/Prefabs/Orange Variant/SNIPER - ORANGE.prefab using Guid(29e1afeebe706394f97bf743f4fcc742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca3022a89e906d30a1b8fd2887f73cc') in 0.018749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
 AssetImportWorker is now disconnected from the server

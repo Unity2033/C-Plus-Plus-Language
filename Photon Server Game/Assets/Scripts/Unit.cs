@@ -13,12 +13,14 @@ public class Unit : MonoBehaviour
 {
     [SerializeField] State state;
     [SerializeField] GameObject tower;
+    [SerializeField] Animator animator;
     [SerializeField] float speed = 5.0f;
 
     void Start()
     {
         state = State.RUN;
         tower = GameObject.Find("Tower");
+        animator = GetComponent<Animator>();
 
         transform.LookAt(tower.transform.position);
     }
@@ -29,7 +31,7 @@ public class Unit : MonoBehaviour
         {
           case State.RUN    : Run();
                 break;
-          case State.ATTACK : 
+          case State.ATTACK : Attack(); 
                 break;
           case State.DIE    :
                 break;
@@ -44,5 +46,18 @@ public class Unit : MonoBehaviour
             tower.transform.position,
             speed * Time.deltaTime
         );
+    }
+
+    public void Attack()
+    {
+        animator.SetTrigger("Attack");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Tower"))
+        {
+            state = State.ATTACK;
+        }
     }
 }
