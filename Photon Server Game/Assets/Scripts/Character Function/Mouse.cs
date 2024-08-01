@@ -5,7 +5,10 @@ using UnityEngine;
 public class Mouse : MonoBehaviour
 {
     [SerializeField] Ray ray;
+    [SerializeField] Vector3 direction;
     [SerializeField] LayerMask layerMask;
+    [SerializeField] RaycastHit raycastHit;
+    [SerializeField] Transform rayPosition;
 
     void Start()
     {
@@ -20,11 +23,19 @@ public class Mouse : MonoBehaviour
 
     public void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
+            direction = Camera.main.ScreenPointToRay(Input.mousePosition).direction;
+
+            ray = new Ray(rayPosition.position, direction);
+
+            if (Physics.Raycast(ray, out raycastHit, Mathf.Infinity, layerMask))
+            {
+
+            }
+
 
         }
-
     }
 
 }

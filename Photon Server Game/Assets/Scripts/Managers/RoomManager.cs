@@ -28,7 +28,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("Photon Game");
         PhotonNetwork.LoadLevel("Photon Game");
     }
 
