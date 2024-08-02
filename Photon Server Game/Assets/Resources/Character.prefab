@@ -74,7 +74,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 63
+    m_Bits: 191
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   rayPosition: {fileID: 4415252510828805162}
 --- !u!1001 &6133883607116414681
 PrefabInstance:

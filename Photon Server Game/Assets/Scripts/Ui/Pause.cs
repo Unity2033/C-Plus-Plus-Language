@@ -7,6 +7,8 @@ public class Pause : MonoBehaviourPunCallbacks
     public void Resume()
     {
         Mouse.ActiveMouse(false, CursorLockMode.Locked);
+
+        Destroy(gameObject);
     }
 
     public void Set()

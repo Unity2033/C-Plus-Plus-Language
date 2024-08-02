@@ -10,7 +10,7 @@ public class View : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        nickName.text = PhotonNetwork.NickName;
+        nickName.text = photonView.Owner.NickName;
     }
 
     public void Update()

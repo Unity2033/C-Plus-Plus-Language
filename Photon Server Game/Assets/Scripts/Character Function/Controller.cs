@@ -8,6 +8,7 @@ using Photon.Realtime;
 [RequireComponent(typeof(Rotate))]
 public class Controller : MonoBehaviourPunCallbacks
 {
+    private GameObject panel;
     [SerializeField] Move move;
     [SerializeField] Mouse mouse;
     [SerializeField] Rotate rotate;
@@ -42,6 +43,11 @@ public class Controller : MonoBehaviourPunCallbacks
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Mouse.ActiveMouse(true, CursorLockMode.None);
+
+            if (panel == null)
+            {
+                panel = Instantiate(Resources.Load<GameObject>("Pause Popup"));
+            }
         }
 
         move.OnMove(Input.GetAxisRaw("Horizontal"),0, Input.GetAxisRaw("Vertical"));
